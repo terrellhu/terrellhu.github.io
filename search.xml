@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>20211217白金了两个游戏</title>
+      <link href="/2021/12/17/20211217-bai-jin-liao-liang-ge-you-xi/"/>
+      <url>/2021/12/17/20211217-bai-jin-liao-liang-ge-you-xi/</url>
+      
+        <content type="html"><![CDATA[<p>    嗯，堕落了大半个月，白金了刺客信条3和解放合辑。。。<br>然后，进入贤者模式，不想再碰ps4了。  </p><p>    刺客信条3的白金过程真是十分的郁闷，没有任何乐趣可言，反而是解放的白金相对容易，体验较好，但是过短的剧情和两部都很低的画质，导致体验一般，不过10多年前的游戏也不能要求太高是不。<br>    玩的时候就想到了还剩最后几个杯还没白的艾吉欧合集，是不是要考虑重新下载了完成一下。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>几个第三方客户端</title>
+      <link href="/2021/11/25/20211125-ji-ge-di-san-fang-ke-hu-duan/"/>
+      <url>/2021/11/25/20211125-ji-ge-di-san-fang-ke-hu-duan/</url>
+      
+        <content type="html"><![CDATA[<p>    自从华为被google封了后，好多客户端就没法直接更新使用了，facebook，instagram，twitter，yutobe，几个必备都用得很难。通过第三方客户端可以一定程度解决问题  </p><ol><li>twitterAPP即便成功装上华为手机，打开也是闪退，必须使用第三方客户端，现在安装了twidereX，还在申请app中，比较麻烦，后面再说效果</li><li>facebook和insta比较厚道，可以直接使用，但是最好安装<a href="https://apkpure.com/">apkpure</a>进行更新管理</li><li>youtobe直接使用<a href="https://github.com/TeamNewPipe/NewPipe">newpipe</a>开源第三方客户端，即轻量又好用</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nacos在k8s里使用单机模式</title>
+      <link href="/2021/11/20/20211120nacos-zai-k8s-li-shi-yong-dan-ji-mo-shi/"/>
+      <url>/2021/11/20/20211120nacos-zai-k8s-li-shi-yong-dan-ji-mo-shi/</url>
+      
+        <content type="html"><![CDATA[<p>    对nacos的官方文档实在是无话可说，接近于没人维护状态。<br>    上面说升1.x升级2.x需要更新数据，还要双写什么的，部署流程无比复杂，结果从1.4.1升级，看了源码，mysql脚本根本没有更新，直接替换镜像就升级成功。。<br>    为了简化开发测试环境的部署结构，直接在k8s上使用单pod部署，即修改分片参数NACOS_REPLICAS为1，结果服务启动成功，但是访问失败，日志报sever down，之前查了挺多资料都找不到原因，好不容易搜到一篇，原来要加上nacos.naming.data.warmup环境变量为false即可。<br>    该参数的含义是：是否在Server启动时进行数据预热，搞不懂。。有空得看下源码。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P2433</title>
+      <link href="/2021/11/15/20211115-luo-gu-jie-ti-p2433/"/>
+      <url>/2021/11/15/20211115-luo-gu-jie-ti-p2433/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P2433">题目内容</a></p><ul><li>思路<br>其实这是14个题目，主要问题都在double的输出精度上了，cout的默认有效数是6，java的printf需要用.xf来控制<br>帮助回忆了，圆周长公式，圆面积公式，球体积公式等<br>Math.pow的开n次方根的用法等<br>第14题就是个1元2次方程，已经忘记了。。。找了公式笔算还算错一次。。  <a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/easy/P2433/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P5737</title>
+      <link href="/2021/11/14/20211114-luo-gu-jie-ti-p5737/"/>
+      <url>/2021/11/14/20211114-luo-gu-jie-ti-p5737/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P5737">题目内容</a></p><ul><li><p>思路<br>1582年以来的置闰规则：<br>普通闰年：公历年份是4的倍数，且不是100的倍数的，为闰年（如2004年、2020年等就是闰年）。<br>世纪闰年：公历年份是整百数的，必须是400的倍数才是闰年（如1900年不是闰年，2000年是闰年）。<br>1582年以前的惯例：四年一闰；如果公元A年的A（正数）能被4整除，那么它就是闰年；如果公元前B年的B（正数）除以4余1，那么它也是闰年。  </p></li><li><p>注意</p><ol><li>不用+1遍历，先把x值打到4的位数，x+=x%4，再以4为步长遍历，减少4分之3的计算</li><li>if条件可以一次搞定</li></ol><p><a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P5737/Main.java">代码实现</a></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P6321</title>
+      <link href="/2021/11/13/20211113-luo-gu-jie-ti-p6321/"/>
+      <url>/2021/11/13/20211113-luo-gu-jie-ti-p6321/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P6321">题目内容</a></p><ul><li>思路<br>还是反向思维，不是看原始数据发散的结果，而是从结果数据直接收敛到原始数组的点。<br>拿结果数组的下标除以放大系数，即为当前结果数组的值。<a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P6321/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用go语言实现nacos配置监听实时更新nginx配置并重启</title>
+      <link href="/2021/11/10/20211110nginx-cong-nacos-tong-bu-pei-zhi-wen-jian-de-gong-ju/"/>
+      <url>/2021/11/10/20211110nginx-cong-nacos-tong-bu-pei-zhi-wen-jian-de-gong-ju/</url>
+      
+        <content type="html"><![CDATA[<p>先上代码<a href="https://github.com/terrellhu/nginx-auto-reload-from-nacos">nginx-auto-reload-from-nacos</a></p><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>nginx的配置文件管理，一直想找一个集中管理配置并自动重启nginx的工具，但是找了一圈都没找到。<br>刚好后台服务的配置都使用的nacos，于是想着把nginx配置放到nacos上也一起管理。<br>于是有了这个go语言的nginx的nacos配置监听工具。  </p><h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><ol><li>监听指定的nacos配置文件，有变更则自动替换本地配置</li><li>配置变更后先执行nginx -t测试配置文件正确性，然后nginx -s reload</li><li>如果配置不正确，则发出企业微信告警</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P6206</title>
+      <link href="/2021/11/07/20211107-luo-gu-jie-ti-p6206/"/>
+      <url>/2021/11/07/20211107-luo-gu-jie-ti-p6206/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P6206">题目内容</a></p><ul><li>思路<br>题目只能按题意硬解，本质上这是一个未证明的数学问题：科拉茨猜想，3x+1问题。<br>所以，其实没啥难度，都不想写代码。。<br>几个点，最后还是time limit了，java实在是慢啊，没办法了：<ol><li>判断奇偶不要用%。。</li><li>其实只要计算到4，不用算到1</li><li>除以2用&gt;&gt;1</li><li>3x+1，可以用n+(n&lt;&lt;1)+1</li></ol><a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P6206/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P3717</title>
+      <link href="/2021/11/04/20211104-luo-gu-jie-ti-p3717/"/>
+      <url>/2021/11/04/20211104-luo-gu-jie-ti-p3717/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P3717">题目内容</a></p><ul><li>思路<br>这个题是帮我回忆了两点间的距离公式，已经完全不记得了。。<br>两点间距离公式为：$$\sqrt[2]{(x_1-x_2)^{2}+(y_1-y_2)^{2}}$$<br>实现上，为了解决数组下标为0的问题，实际申请大1的二维数组，相当于0下标的都不使用。<br>顺带看了下mathjax数学公式渲染的语法！<br><a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P3717/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P2006</title>
+      <link href="/2021/11/03/20211103-luo-gu-jie-ti-p2006/"/>
+      <url>/2021/11/03/20211103-luo-gu-jie-ti-p2006/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P2006">题目内容</a></p><ul><li>思路<br>先吐槽一下，这都是什么题目啊，好好出个题不行吗？<br>处理输入输出的代码比计算的代码还要多不少。。不需要解释了，直接写就行。<a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P2006/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P1116</title>
+      <link href="/2021/11/02/20211102-luo-gu-jie-ti-p1116/"/>
+      <url>/2021/11/02/20211102-luo-gu-jie-ti-p1116/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P1116">题目内容</a></p><ul><li>思路<br>看完题第一感觉，就是这个是个冒泡排序。。太简单了，直接做了提交。<br>不过冒泡排序其实是有优化空间的，O(n^2)的复杂度太高了，先不考虑了。。<a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P1116/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>20211101组件选择评估维度</title>
+      <link href="/2021/11/01/20211101-zu-jian-xuan-ze-ping-gu-wei-du/"/>
+      <url>/2021/11/01/20211101-zu-jian-xuan-ze-ping-gu-wei-du/</url>
+      
+        <content type="html"><![CDATA[<p>    之前想统一团队的消息组件，把现有的rabbitmq换成kafka，原因是后续主要想用kafka对接大数据平台，但是经过调研后，发现想简单了，都是消息队列，其实差别蛮大的，并且在系统组件的选择上太过随意，其实这里是有标准方法的。</p><h3 id="组件的评估维度"><a href="#组件的评估维度" class="headerlink" title="组件的评估维度"></a>组件的评估维度</h3><ul><li><p>功能维度<br>以消息组件为例，一般常用功能，优先级队列、延迟队列、死信队列、重试队列、消费模式（推、拉）、广播消费、消息回溯、持久化、消息追踪、消息过滤、多租户、多协议、消息顺序性、流量控制、多语言客户端、冥等性、事务性等功能，分别的支持度如何，即可判断当前我们需要的消息队列是否满足当前的业务需求。从功能上看，rabbitmq无疑具备更多功能。  </p></li><li><p>性能维度<br>对消息队列组件，其实就是消息的吞吐量，fakfa没得说，完胜，超过rabbitmq一个数量级。  </p></li><li><p>可用性<br>分布式部署，容灾，故障自动切换，队列备份等，两者都不错。  </p></li><li><p>运维管理<br>运维便利性，对小公司特别重要，没有运维呀。rabbitmq的自带管理后台就非常强大了，kafka也不差，不过没咋用过。</p></li><li><p>社区及生态<br>其实就是看能不能活得长，别用了两年就停更了，那切换成本就大了，然后如果提供插件化的组件，就看插件的数量，强大的插件有时候超过组件本身。</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P1830</title>
+      <link href="/2021/10/27/20211027-luo-gu-jie-ti-p1830/"/>
+      <url>/2021/10/27/20211027-luo-gu-jie-ti-p1830/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P1830">题目内容</a></p><ul><li>思路<br>还是反向思维，不是看这个矩形覆盖了多少个Y点，而是统计Y点落在每个矩形区域的次数。<br>主要考查点，就是怎么判断一个点是否在矩形区域内，在知道矩形的左上和右下角坐标的时候，这个判断很简单，就是判断点的x位和矩形的两个x比大小，点的y位和矩形的两个y比大小即可。<a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P1830/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P3742</title>
+      <link href="/2021/10/26/20211026-luo-gu-jie-ti-p3742/"/>
+      <url>/2021/10/26/20211026-luo-gu-jie-ti-p3742/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P3742">题目内容</a></p><ul><li>思路<br>这个题比较简单，感觉没啥可说的。<br>主要是判断，当x小于z的时候，肯定是有问题的了，直接返回-1，因为z必然是最小的。<br>然后当x&gt;z的时候随便选择一个大于的字母即可，也可以直接选z，最简单。<br>不知道这个题是要考啥，字符比较？不像。。反向思维？也不像。。<br>反正就这样了。。<a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P3742/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P2084</title>
+      <link href="/2021/10/25/20211025-luo-gu-jie-ti-p2084/"/>
+      <url>/2021/10/25/20211025-luo-gu-jie-ti-p2084/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P2084">题目内容</a></p><ul><li>思路<br>这个题表面上是考进制转换，其实和进制转换没啥关系，更多是考字符串处理。。<br>需要注意的几个点：<ol><li>为0的需要排除，循环中的代码要保持优雅</li><li>+号的处理，加个if太不优雅了，可以每次默认+，最后去掉末尾的字符<br><a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P2084/Main.java">代码实现</a></li></ol></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>洛谷解题P4327</title>
+      <link href="/2021/10/23/20211023-luo-gu-jie-ti-p4327/"/>
+      <url>/2021/10/23/20211023-luo-gu-jie-ti-p4327/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P4327">题目内容</a></p><ul><li>思路<br>使用固定串输出应该是最快的，主要解决第三行的替换问题，第1行和第5行是对应的，第2行和第3行是对应的。其实不管哪*号还是#号，对这几行来说，都没有区别，每个字符占用4个位置，最后补一个，只有第3行才需要根据当前列数来判断补*还是补#号，所以，这4行只要单纯取长度*4+1个字符输出即可。<br>第3行需要判断当前是第几个字符，如果是第3的整数倍，则补*号，否则补#号。<br><a href="https://github.com/terrellhu/java-study/blob/master/luogu/src/P4327/Main.java">代码实现</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 刷题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>管理者考核的几个维度</title>
+      <link href="/2021/10/22/20211022-guan-li-zhe-kao-he-de-ji-ge-wei-du/"/>
+      <url>/2021/10/22/20211022-guan-li-zhe-kao-he-de-ji-ge-wei-du/</url>
+      
+        <content type="html"><![CDATA[<p>    管理者本身也是会被考核的，这里有几个考核点记录一下：</p><ul><li><p>目标管理<br>目标从时间段上可以分为短期目标、中期目标、长期目标。<br>从对象上又可以分为团队目标和个人目标。<br>当各种目标都能达到一种和谐统一，应该就是最稳定的状态了。</p></li><li><p>分析决策<br>从上往下，直接领导是否能感受到决策的过程和结果，主要是结果。<br>从下往上，团队成员是否有参与度，能发表意见，被采纳后有即时反馈。</p></li><li><p>流程管理<br>信息周知方式。<br>新人多的团队，需要完善好新人辅导流程和文档建设。<br>流程的执行过程中，收集反馈，优化不足。<br>安全流程的宣导和执行。</p></li><li><p>团队管理<br>更多是向下的，要注意团队成员的感受。<br>研发都希望工作有连续性，但是现实的情况往往不能满足，一个是要做好变更的沟通，明白意义；二是控制变更的比例在一定的范围，不要扩大化。  </p></li><li><p>变革管理<br>信息的充分及时同步，讲清楚背景、原因和推导过程，取得大家的认同。  </p></li><li><p>组织氛围<br>除了工作上的氛围，非工作的也要适当营造。  </p></li><li><p>团队建设<br>要让团队成员感受你对他职业发展的体系化的思考和建议，而不是只是零散的小点的辅导。</p></li><li><p>跨团队协作<br>不多说，撕逼去了。</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>鬼作秀（Creepshow）与鬼玩人（The Evil Dead）</title>
+      <link href="/2021/10/21/20211021-gui-zuo-xiu-yu-gui-wan-ren/"/>
+      <url>/2021/10/21/20211021-gui-zuo-xiu-yu-gui-wan-ren/</url>
+      
+        <content type="html"><![CDATA[<p>    看了几集鬼作秀，发现很寡淡，即不血腥，也不恐怖，都是一个个小故事的合集，一集2个故事，一个故事约20分钟，挺无聊的。这位导演现在除了顶着丧尸片开创者的头衔，貌似没有什么优秀的恐怖片了。<br>    反而是鬼玩人的导演，搞了3季的鬼玩人美剧，真的是超出预期，血腥，搞笑，还有点点恐怖感，主演真是靠这个系列从青年拍到老年了。<br>    鬼玩人系列之前是3部电影，前2部已经没有什么印象了，但是第3部的结局至今记忆犹新，那是20多年前了，当看着主角服了药几百后醒来时，世界已成废墟，对当时幼小的我的心灵冲击太大了！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 休闲娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 美剧 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>推荐一个vscode下的markdown语法检查插件</title>
+      <link href="/2021/10/20/20211020-tui-jian-yi-ge-vscode-xia-de-markdown-yu-fa-jian-cha-cha-jian/"/>
+      <url>/2021/10/20/20211020-tui-jian-yi-ge-vscode-xia-de-markdown-yu-fa-jian-cha-cha-jian/</url>
+      
+        <content type="html"><![CDATA[<h3 id="markdownlint"><a href="#markdownlint" class="headerlink" title="markdownlint"></a>markdownlint</h3><p>    我已经不记得是什么时候装的这个插件了，一直没怎么写过markdown，所以也用得不多，不过今天突然发现挺好用，语法提示很及时，也能规范markdown写作风格。<br>    不过这个规则对一些复杂的应用支持不一定好，比如在引用区块内加上有序列表，有序列表前需要有空行，但是引用区块内不能出现空行。<br>    项目地址：<a href="https://github.com/DavidAnson/markdownlint">https://github.com/DavidAnson/markdownlint</a></p><blockquote><p>markdownlint的检测规则<br><a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md">Rules（英文版）</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>微服务基础-服务注册与发现</title>
+      <link href="/2021/10/19/20211019-wei-fu-wu-ji-chu-fu-wu-zhu-ce-yu-fa-xian/"/>
+      <url>/2021/10/19/20211019-wei-fu-wu-ji-chu-fu-wu-zhu-ce-yu-fa-xian/</url>
+      
+        <content type="html"><![CDATA[<p>    服务注册与发现不是微服务架构的专利，而是早期SOA时代就需要解决的一个问题，只不过在微服务时代这个需求更加强烈，实现上更加智能。<br>    服务注册与发现主要提供服务注册、发现、心跳检测。其中服务发现会涉及到服务检测，负载均衡等问题。</p><ul><li>服务注册  </li></ul><p>    有些人分为客户端注册和代理注册，我认为是不合理的，代理注册是个伪需求，除非在一些特殊的网络情况下有代理需求，这种应该做为网络环境去考虑而不是注册的分类，所以只有一种客户端注册，即服务启动时自行向注册中心上报自己的信息。</p><ul><li>服务发现  </li></ul><p>    服务发现也分为三种，客户端发现、服务端发现、代理发现。</p><ol><li><p>客户端发现，即客户端直接直接向注册中心查询可用服务的请求，并按负载均衡算法选择一个实例发起调用。</p></li><li><p>服务端发现，即客户端向注册中心查询可用服务的请求时，服务端按负载均衡算法选择一个实例并返回给客户端，再由客户端发起调用。</p></li><li><p>代理发现，这里相当于在客户端和注册中心之前加一个agent，在以前以机器为维度的部署模式下比较见，agent可以缓存所有注册服务的信息，定期更新，或者根据负载均衡算法选取合适的实例给客户端，还兼具熔断等功能，但是在容器化部署的现在，这种模式比较少了。</p></li></ol><ul><li>心跳检测  </li></ul><p>    又分为主动和被动检测</p><ol><li><p>主动检测，即注册中心定时向客户端发送心跳命令，如果没有正确返回，如失败3次等，则从注册中心移除该实例。</p></li><li><p>备动检测，即客户端定时主动向注册中心发送心跳，如注册中心连续3次未收到心跳，则从注册中心移除该实例。</p></li></ol><p>    在目前微服务架构体系下，服务发现都是客户端发现居多，这也可以理解，服务端发现是中心化的，每一次服务发现和调用结果都需要返回给注册中心做判断，注册中心会成为系统的单点，即便通过分布式部署等努力提高注册中心的可用性，问题还是会发生。一种比较常见的情况就是注册中心认为实例存活，但是客户端调用是不通的，在客户端发现模式下，多次失败会在客户端层面自动移除实例，但是在注册中心该实例会一直存在。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>源码编译java虚拟机</title>
+      <link href="/2021/10/18/20211018-yuan-ma-bian-yi-java-xu-ni-ji/"/>
+      <url>/2021/10/18/20211018-yuan-ma-bian-yi-java-xu-ni-ji/</url>
+      
+        <content type="html"><![CDATA[<h3 id="JAVA虚拟机编译"><a href="#JAVA虚拟机编译" class="headerlink" title="JAVA虚拟机编译"></a>JAVA虚拟机编译</h3><ul><li><p>前置条件：使用win10下的wsl2的ubuntu20来编译，gcc安装了9.3版</p></li><li><p>简要过程如下：</p></li></ul><ol><li><p>从<a href="https://hg.openjdk.java.net/jdk">https://hg.openjdk.java.net/jdk</a>上选择想要下载的版本，这里我选择的是jdk12，速度极其慢，建议开vpn下载。</p></li><li><p>编译12版本的jdk，需要先安装小一个版本的jdk，先修改ubuntu源为阿里源，打开ubuntu源文件，直接替换ubuntu相关的域名都为mirrors.aliyun.com</p> <figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/apt/sources.list</span><br><span class="line">sudo apt-get install openjdk-11-jdk</span><br><span class="line">java --version</span><br></pre></td></tr></tbody></table></figure></li><li><p>进入jdk12源码目录，执行命令，有可能会报错，提示装一些软件包，按提示安装即可，提示非常友好，也可以执行下面的命令先安装一波，因为ubuntu20的默认gcc版本是9.3和官方推荐的7.8有点不兼容，会报错，需要加上–disable-warnings-as-errors命令，禁用一个报错</p> <figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install zip unzip libx11-dev libxext-dev libxrender-dev libxrandr-dev libxtst-dev libxt-dev libcups2-dev libfontconfig1-dev libasound2-dev</span><br><span class="line">bash configure --disable-warnings-as-errors --enable-debug --with-jvm-variants=server</span><br></pre></td></tr></tbody></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 读书 </tag>
+            
+            <tag> 深入理解JAVA虚拟机（第三版） </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>容易被忽视的软件开发人员的重要能力（三）</title>
+      <link href="/2021/10/17/20211017-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-san/"/>
+      <url>/2021/10/17/20211017-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-san/</url>
+      
+        <content type="html"><![CDATA[<h4 id="异步思维"><a href="#异步思维" class="headerlink" title="异步思维"></a>异步思维</h4><p>    之前说了一个思考力，算就一种通用的思考能力，但是异步思维可以说是程序员专有了。程序员在考虑系统逻辑时，一定要有异步和并发的思维。<br>    这么多年工作中，遇到很多人，思考一个流程的时候是单线程的，但是计算机硬件架构本质上是异步的，硬件上可以先不考虑，至少多进程多线程协程等等，都会使流程变得复杂，之所以要有开发框架的很大一部分原因就是希望开发人员不用去考虑这些情况。但是对于资深研发人员，一定要培养用异步和并发的方式去思考问题的能力，很多人做了几年，思考流程还是单纯的增删查改，或者遇到多线程之类的就失去思考能力。<br>    这种能力应该也是可以锻炼的，一个是如果有项目锻炼那应该能加快理解，如果没有项目机会，就多看一些多线程的项目，更重要的是要自己动手去做一下。  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>RestFul规范和安全漏洞的冲突</title>
+      <link href="/2021/10/16/20211016restful-gui-fan-he-an-quan-lou-dong-de-chong-tu/"/>
+      <url>/2021/10/16/20211016restful-gui-fan-he-an-quan-lou-dong-de-chong-tu/</url>
+      
+        <content type="html"><![CDATA[<p>    昨天客户报有不安全的HTTP方法，于是今天一早就从nginx上把除了GET|POST|HEAD的方法都禁用了，结果到了晚上就杯具了。。<br>    根本原因就是，在RestFul的规范中，对资源的更新，删除操作都是要求使用PUT、DELTETE等方法，目前团队实现的control接口中有大量的PUT和DELETEmapping，导致从nginx配置中禁用这两个方法，一些操作就会异常。<br>    这种情况之前还真没遇到过，现在先临时解除nginx限制，保证系统正常，后续的思路有两个：</p><ol><li>针对每个location，单独配置。</li><li>不再遵循RestFul规范，所有后台接口都使用POST方法。  </li></ol><p>    感觉HTTP的各种方法就是个半成品，一个服务器就只要GET|POST|HEAD就可以了，多了反而会导致各种歧义。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTTP的方法</title>
+      <link href="/2021/10/15/20211015http-de-fang-fa/"/>
+      <url>/2021/10/15/20211015http-de-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>    HTTP还有这么多方法，居然一直不了解，今天系统记录一下，HTTP1.1协议一共定义了8种方法</p><h3 id="先说最常用的3种方法"><a href="#先说最常用的3种方法" class="headerlink" title="先说最常用的3种方法"></a>先说最常用的3种方法</h3><ul><li>GET<br>请求指定页面信息，并返回实体主体，这个应该不用多说</li><li>HEAD<br>和GET类似，只不过不返回消息体，只有消息头，一般用于检测资源存在，服务正常等</li><li>POST<br>向指定资源提交数据进行处理请求，这个应该也不用多说</li></ul><h3 id="其余5种比较少见"><a href="#其余5种比较少见" class="headerlink" title="其余5种比较少见"></a>其余5种比较少见</h3><ul><li>OPTIONS<br>返回服务器针对特定资源所支持的HTTP请求方法，也可以利用向web服务器发送*的请求来测试服务器的功能性</li><li>PUT<br>向指定资源位置上传</li><li>DELETE<br>请求服务器删除Request-URL所标识的资源</li><li>TRACE<br>回显服务器收到的请求，用于诊断和测试</li><li>CONNECT<br>HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器</li></ul><blockquote><p>注意：</p><ol><li>方法名称区分大小写</li><li>HTTP服务器至少需要支持上面最常用的3种方法</li><li>下面5种在一些安全扫描中会被标记为低风险漏洞</li></ol></blockquote><h3 id="nginx配置上关闭HTTP方法"><a href="#nginx配置上关闭HTTP方法" class="headerlink" title="nginx配置上关闭HTTP方法"></a>nginx配置上关闭HTTP方法</h3><p>    nginx关闭方法可以全局设置，也可以在某个location下<br>全局设置方式，location中的配置方式一样</p><figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ($request_method ~ ^(PUT|DELETE)$) {</span><br><span class="line">    <span class="keyword">return</span> <span class="number">403</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>腾讯云云开发基于koa部署应用</title>
+      <link href="/2021/10/14/20211014-teng-xun-yun-yun-kai-fa-ji-yu-koa-bu-shu-ying-yong/"/>
+      <url>/2021/10/14/20211014-teng-xun-yun-yun-kai-fa-ji-yu-koa-bu-shu-ying-yong/</url>
+      
+        <content type="html"><![CDATA[<p>    先吐槽，云开发文档层次不够清晰，开始总以为是部署云函数，结果其实是部署应用，搞清楚这里面的关系后，其实蛮简单。</p><h4 id="云开发的层次"><a href="#云开发的层次" class="headerlink" title="云开发的层次"></a>云开发的层次</h4><ul><li>最下层是数据库、云存储、云函数、静态网站托管、云托管等能力</li><li>基于基础能力腾讯云又封装了CloudBase Framework，称之为云原生一体化部署工具，这个工具相当于各种应用模板，可以快速生成，然后通过命令一发布各种基础能力</li></ul><h4 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h4><p>    刚开始老是把koa当成云函数去部署，想着怎么各种兼容云函数，各种报错，后面发现这个部署工具后，才算打开新世界的大门。</p><h4 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h4><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">初始化代码</span></span><br><span class="line">tcb new xxx koa-starter    </span><br><span class="line"><span class="meta">#</span><span class="bash">修改相关配置，然后一键发布，这个命令可以查看部署详细信息，万一出错，可以看</span></span><br><span class="line">tcb framework deploy --verbose</span><br></pre></td></tr></tbody></table></figure><p>然后。。就可以啦，自己再配置一下访问服务即可通过域名访问<br>至于koa接收企微验证消息并处理的，网上大把，就不细说了。</p><h4 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h4><ol><li>最大的好处就是云开发的免费额度了，对自己搞个小应用，搭个像我这种没什么访问量的blog很省钱</li><li>基于云应用的部署，可以实现本地启动并调试，对服务代码侵入性很小，方便迁移</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天做了什么？</title>
+      <link href="/2021/10/13/20211013-jin-tian-zuo-liao-shi-me/"/>
+      <url>/2021/10/13/20211013-jin-tian-zuo-liao-shi-me/</url>
+      
+        <content type="html"><![CDATA[<p>今天不知道写啥，因为没有输入，我很焦虑，回想了一下今天做了些啥？</p><ul><li><p>上午  </p><ol><li>写部门OKR，看各小组OKR，然后提出意见，让大家修改，同时我自己也要改，搞笑的是，现在已经10月中了，我写的是下半年的OKR，嗯，你没看错。</li><li>开会讨论研发架构调整，各种分组分人，让大家满意</li><li>讨论办公地址座位问题</li></ol></li><li><p>下午</p><ol><li>突然客户要技术文档，特别急，十分急，马上要，抽空写了一个技术方案文档，嗯，这是常态</li><li>下午零碎改完自己和各小组OKR，发给HR和总助</li><li>惊闻一位骨干同学要离职，刚给了五星，还加薪。。是要回老家了，没法劝，深圳越来越留不住人</li><li>沟通各种晋级结果和调薪，没沟通完，</li></ol></li><li><p>晚上</p><ol><li>抽空写9月月报汇报材料，你还是没看错，已经10月13了，9月月会还没开</li><li>写了这篇流水账。。。</li></ol></li></ul><h4 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h4><ol><li>在这些事情中我能有什么提升？</li><li>今天想继续研究下云开发上的koa部署的，结果没有任何机会</li><li>早上出家门前看了几页书算一点点点输入吧。。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 管理 </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>从罗某平事件看名记者的水平</title>
+      <link href="/2021/10/12/20211012-cong-luo-mou-ping-shi-jian-kan-ming-ji-zhe-de-shui-ping/"/>
+      <url>/2021/10/12/20211012-cong-luo-mou-ping-shi-jian-kan-ming-ji-zhe-de-shui-ping/</url>
+      
+        <content type="html"><![CDATA[<p>    我的朋友圈里面有一个前同事，经常发大段大段的时事评论，在疫情刚发生的时候，国家强制戴口罩，而国外是不要求的，于是这个货天天在朋友圈转发国外怎么怎么的，戴口罩不科学怎么怎么的，等到世卫和一系列研究都证明确实要戴口罩后，这货再也不提口罩的事了，转而各种吐槽防疫政策不合理，不让他回家之类的，每次看到他的朋友圈，我都要感叹一句，屁股决定脑袋，他所想要的只是按着自己的思路去各种证明为了自己更方便而已。<br>    罗某平其实也一样，他站在自己的位置上，仿佛他来指挥就一定不会发生这种事，他如果上战场遇到这种事就一定会根据自己的想法要么逃跑要么投敌，单纯的以上帝视角嘲笑一件事情的结果，而不根据当时的情况设身处地的思考，这位名记者的水平也不过如此。<br>    我的容易被忽视的软件开发人员的重要能力系列第三种准备就写同理心的能力，这其实是通用能力，所有人都应该具备的，特别是记者，我感觉更需要，否则怎么能写出让读者感同身受的文字，就罗某平的言论来看，我感觉他完全没有这种能力，之前人们对他的各种评价，我感觉都言过其实，不过都是个普通人而已，我也是:smile：。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 休闲 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>合金装备5幻痛</title>
+      <link href="/2021/10/11/20211011-he-jin-zhuang-bei-5-huan-tong/"/>
+      <url>/2021/10/11/20211011-he-jin-zhuang-bei-5-huan-tong/</url>
+      
+        <content type="html"><![CDATA[<p>花了两百个小时，一个暑假，终于白金了。</p><h4 id="简单总结"><a href="#简单总结" class="headerlink" title="简单总结"></a>简单总结</h4><ul><li>上手之后，游戏性无比优秀，玩起来很欢乐</li><li>剧情历史包袱太重，没有玩过前作、前前作、前前前作有些剧情会不懂</li><li>剧情复杂有转折，有颠覆，不过只到第31章前，后面的大部分章节都是重复，完全不应该放到主线流程里面</li><li>开放世界，任务自由度极高，脑洞很大，也很中二</li><li>将游戏性和潜入玩法结合的最好的游戏</li></ul><p>    之前从来没有玩过前作，甚至一度还把合金装备和合金弹头系列搞混淆，这个游戏买了4年了，最初是冲着名气去的，但是玩到第二章就玩不下去了，今年重新捡起来，先看了个视频攻略，照着攻略过了一章，上手之后，发现游戏真的做到了即紧张，又欢乐，就算失败也不会太有失败感，有时候还会觉得搞笑。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 休闲娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>知识的沉淀与积累</title>
+      <link href="/2021/10/09/20211009-zhi-shi-de-chen-dian-yu-ji-lei/"/>
+      <url>/2021/10/09/20211009-zhi-shi-de-chen-dian-yu-ji-lei/</url>
+      
+        <content type="html"><![CDATA[<p>这里又分两种情况</p><ul><li><h3 id="个人的知识沉淀"><a href="#个人的知识沉淀" class="headerlink" title="个人的知识沉淀"></a>个人的知识沉淀</h3><p>    我现在写文章应该算个人知识沉淀的一种方式，我也见过几年时间就在印象笔记上积累了10W+笔记的人，网上也有各种方法论和工具使用教程，这里不做多说。<br>    只是这里要区分知识和经验，知识可积累、可分享，但是经验，不能说完全不行，但是很难。就像你10几岁的时候，老人家给你说的一些人生经验，可能一万个人里面有一个能领会就不错了，大部都是在经历社会的毒打之后，猛然明白，原来之前有人给我说过。。</p></li><li><h3 id="团队的知识沉淀"><a href="#团队的知识沉淀" class="headerlink" title="团队的知识沉淀"></a>团队的知识沉淀</h3><p>    团队的知识沉淀真的可以吗？除了做一些形式上的文档输出、分享，一般半小时的分享，我只希望有一半的人能记住其中的一条关键信息就很不错了；其余的什么网盘文档、wiki之类的，真的会有人去看吗？我表示怀疑。<br>    最终，团队的知识沉淀和积累还是要靠人，要靠人去经历。</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>管理的本质是激发潜能与善意</title>
+      <link href="/2021/10/08/20211008-guan-li-de-ben-zhi-shi-ji-fa-qian-neng-yu-shan-yi/"/>
+      <url>/2021/10/08/20211008-guan-li-de-ben-zhi-shi-ji-fa-qian-neng-yu-shan-yi/</url>
+      
+        <content type="html"><![CDATA[<p>管理不是控制，管理的本质是激发潜能和善意。– 彼得·德鲁克<br>第一次听到这句话的时候，有一种从内心深处升起的膜拜，这一句话已经近乎道了。<br>在大厂的研发管理其实相对比较简单，更多是对上管理和跨部门沟通，处理好各种关系，对下有各种成熟的工具，标准，规范，一般按步就班即可，就算想走特殊流程也需要各种理由。<br>小公司就不一样，更多是靠技术能力建立个人威望，以情谊建立团队基本盘，这样是能打仗的团队，但是哥们意气太重，对公司的职业化管理其实是不利的，不过这都是后话，小公司首要的目的是活下去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>出生人口大跌一点解释</title>
+      <link href="/2021/10/06/20211006-chu-sheng-ren-kou-da-die-yi-dian-jie-shi/"/>
+      <url>/2021/10/06/20211006-chu-sheng-ren-kou-da-die-yi-dian-jie-shi/</url>
+      
+        <content type="html"><![CDATA[<p>推荐一个视频，看了后很有感触，从政治经济学角度来解释出人口下跌的原因，感觉挺靠谱，不看视频的可以看下我的简单描述<br>当收入只能满足自己的衣食住行时，只能满足简单的再生产。<br>当收入满足下面两个象限时，只能满足一代人内的扩大再生产。<br>当改只能满足左边两个象限时，人口会增长，但是无法扩大再生产。<br>只有当收入包含全部4个象限时，人口和扩大再生产才能合理增长。<br>目前我国大部分人的情况可能只满足了左下象限，直接导致出生率断崖下跌，但是在人力市场，又内卷得厉害，形成恶性循环。<br><img src="/images/20211006-1.png" alt="收入与人口扩大再生产象限图"><br>最后推荐一下这个视频</p><iframe src="//player.bilibili.com/player.html?aid=763255170&amp;bvid=BV1864y187PN&amp;cid=417086834&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>应不应该给孩子玩游戏</title>
+      <link href="/2021/10/05/20211005-ying-bu-ying-gai-gei-hai-zi-wan-you-xi/"/>
+      <url>/2021/10/05/20211005-ying-bu-ying-gai-gei-hai-zi-wan-you-xi/</url>
+      
+        <content type="html"><![CDATA[<p>先说说我大学室友的经历，他在上大学之前从来没有接触过任何游戏，没有进入游戏厅、网吧这些地方，自从我们带他去网吧通宵一次后，他仿佛打了新世界的大门，再也停不下来，传奇爆火之后宿舍已经看不到他的人了，后来剑网更是打到全服前几名。最终的结果是，他退学了。<br>所以，现在我对孩子玩游戏是支持的，只是要控制时间和游戏内容，尽量让他们接触优秀的游戏，国产手游尽量避免，多接触主机上的优秀的游戏，特别推荐近期的非常考验协作的合家欢游戏–双人成行，即考验多人协作，又能锻炼思考力，反应力，非常适合和小孩一起玩。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教育 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>容易被忽视的软件开发人员的重要能力（二）</title>
+      <link href="/2021/10/04/20211004-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-er/"/>
+      <url>/2021/10/04/20211004-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-er/</url>
+      
+        <content type="html"><![CDATA[<p>思考力，这其实是一种通用能力，每个人都要具备的能力，但是大部分人在大部分时候，进行的思考都是凭经验行事。<br>这种能力也是可以通过一定的方法锻炼提升的，这里主要介绍一本书：《金字塔原理》这本书提供了理论和实践工具帮助进行深度思考，重点是需要长期持续的用这个方法融入到工作生活的思考中。<br>有一句形容韭菜的话说得很好，你无法亏掉超出你认知的钱。思考也是一样，知识和经验的积累是深度思考的前提，没有积累的思考就像没有地基的大楼，很快会倒掉。<br>思考环境也是一个很重要的因素，在我多年的工作中，至少有一半的困难问题思考是在洗澡过程中完成的！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>容易被忽视的软件开发人员的重要能力（一）</title>
+      <link href="/2021/10/03/20211003-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-yi/"/>
+      <url>/2021/10/03/20211003-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-yi/</url>
+      
+        <content type="html"><![CDATA[<p>抽象能力，是我认为的软件开发人员需要具备的最重要的能力之一，对一个大型系统的设计过程其实就是对复杂需求的抽象过程，缺乏抽象能力的软件开发人员在面对复杂的业务需求和系统的时候很难做出好的设计。<br>抽象能力是可以通过学习锻炼来加强的，从早期的面向对象到领域驱动设计，都是通过标准流程和思想去提炼需求的共性映射为抽象的系统流程。<br>最简单的抽象实践就是分类，当面对系统需求的多种实体，状态，关系等，分析并找出共性，然后为同一类需求进行统一的设计和实现。<br>做业务需求开发的同学经常会认为自己的工作单调重复，没有成长性，其实结合行业需求的系统抽象的经验和能力是很好的积累。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在腾讯云云开发上部署人生重开模拟器</title>
+      <link href="/2021/10/02/20211002-zai-teng-xun-yun-yun-kai-fa-shang-bu-shu-ren-sheng-chong-kai-mo-ni-qi/"/>
+      <url>/2021/10/02/20211002-zai-teng-xun-yun-yun-kai-fa-shang-bu-shu-ren-sheng-chong-kai-mo-ni-qi/</url>
+      
+        <content type="html"><![CDATA[<p>刚好在云开发上部署了这个hexo-blog，看到人生重开模拟器的开源，针对的是阿里云开发，所以简单搞了下部署到腾讯云开发上。<br>纯静态网站，其实也没啥难度，从github上拉代码，<a href="https://github.com/AliyunWorkbench/lifeRestart.git">https://github.com/AliyunWorkbench/lifeRestart.git</a><br>由于是用的家里的电脑，整环境用了一个小时，部署代码5分钟搞定。<br>在windows下使用webpack不支持，装了wsl2，直接在ubuntu下安装nodejs，cnpm，webapck，执行cnpm run build打包后，把build目录下的所有文件上传腾讯云开发静态网站托管目录即可。<br>体验地址：<a href="https://www.yarntech.cn/relife/index.html">人生重开模拟器</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>研发管理的一点感想</title>
+      <link href="/2021/10/01/20211001-yan-fa-guan-li-de-yi-dian-gan-xiang/"/>
+      <url>/2021/10/01/20211001-yan-fa-guan-li-de-yi-dian-gan-xiang/</url>
+      
+        <content type="html"><![CDATA[<p>作为技术管理者，一定不能唯老板是从，在不懂技术的老板眼里，研发都不是人，只是一个个资源，技术管理者应该尽量将这种把人纯粹资源化的导向和技术团队做隔离。<br>即便对老板对公司来说这就是事实，对研发团队来说这是一定不能变成团队的意识，对每个研发人员来说，他们应该关心的就是目标和成长。<br>当然这是指互联网产品型研发团队，交付类、外包类研发团队可能刚好相反。。为了追求利润最大化，每个人都会物化成资源做最优匹配和规划。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>正在看的两部恐怖美剧</title>
+      <link href="/2021/09/30/20210930-zheng-zai-kan-de-liang-bu-kong-bu-mei-ju/"/>
+      <url>/2021/09/30/20210930-zheng-zai-kan-de-liang-bu-kong-bu-mei-ju/</url>
+      
+        <content type="html"><![CDATA[<p>一部是《全新樱桃味》一部是《午夜弥撒》，两部都还没看完，但是都有一个感受，就是慢，节奏缓缓展开，剧情扑朔迷离。<br>特别是午夜弥撒，感觉台词和表演都像看话剧。。虽然我没看过话剧，哈哈。观景体验上和一般的快节奏美剧很不一样。<br>全新樱桃味是一种诡异的克苏鲁风格，午夜看了三集都要以为是个宗教片，前三集都是无神论和神父的辩论，穆斯林和基督社区的关系等等，大段的台词对白，各种圣经的段落引用，不明觉历。<br>只有netflix才能拍出这种慢节奏的片了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 休闲娱乐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 美剧 </tag>
+            
+            <tag> 休闲 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
