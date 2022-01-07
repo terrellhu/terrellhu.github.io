@@ -288,10 +288,10 @@
     // 每天切换 banner 图.  Switch banner image every day.
     // 修改为使用cdn图片，读取配置文件
     // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/0.jpg?sign=5338b6d02f0ae10a2f23038b864010ba&t=1633238092,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/1.jpg?sign=cba9d5273afe93080a47743c93b98340&t=1633238099,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/2.jpg?sign=716fdba6ed2f8c9ac156c0152a825271&t=1633238108,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/3.jpg?sign=f0c186cc3837077365695b29f60fcd36&t=1633238115,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/4.jpg?sign=fd2c04c957f8b482c7d1411f3aede790&t=1633238121,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/5.jpg?sign=bf6938b528bb688bbfe8698ce761c69c&t=1633238128,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/6.jpg?sign=ece29b2028b7eea82130a8c2247a862c&t=1633238587";
+    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (994).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (995).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (996).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (997).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (998).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (999).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1000).jpg";
     var bannerImages = banners.split(',');
-    var bannerUrl = bannerImages[new Date().getDay()];
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    var bannerUrl = encodeURI(bannerImages[new Date().getDay()]);
+    $('.bg-cover').css('background-image', 'url("' + bannerUrl + '")');
 </script>
 
 
@@ -312,10 +312,19 @@
                 
                 
                 
+                <a href="/categories/%E5%B7%A5%E4%BD%9C/" title="工作: 6">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F9EBEA;">工作
+                        <span class="tag-length">6</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/" title="休闲娱乐: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">休闲娱乐
+                            style="background-color: #F5EEF8;">休闲娱乐
                         <span class="tag-length">3</span>
                     </span>
                 </a>
@@ -324,17 +333,8 @@
                 <a href="/categories/%E6%8A%80%E6%9C%AF/" title="技术: 24">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            style="background-color: #F5EEF8;">技术
+                            style="background-color: #D5F5E3;">技术
                         <span class="tag-length">24</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%B7%A5%E4%BD%9C/" title="工作: 6">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">工作
-                        <span class="tag-length">6</span>
                     </span>
                 </a>
                 
@@ -364,7 +364,8 @@
                     <a href="/2021/10/27/20211027-luo-gu-jie-ti-p1830/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/23.png?sign=cd0fcdb60b56532270ee4f5d729fca47&t=1634051308" class="responsive-img" alt="洛谷解题P1830">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (473).jpg" class="responsive-img" alt="洛谷解题P1830">
                             
                             <span class="card-title">洛谷解题P1830</span>
                         </div>
@@ -413,7 +414,8 @@
                     <a href="/2021/10/26/20211026-luo-gu-jie-ti-p3742/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/22.png?sign=d84361ecfcda6065a55efb99eb1ba219&t=1634051301" class="responsive-img" alt="洛谷解题P3742">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1218).jpg" class="responsive-img" alt="洛谷解题P3742">
                             
                             <span class="card-title">洛谷解题P3742</span>
                         </div>
@@ -462,7 +464,8 @@
                     <a href="/2021/10/25/20211025-luo-gu-jie-ti-p2084/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/21.png?sign=b0918bd5233ff63747a9ee5f31d9728a&t=1634051295" class="responsive-img" alt="洛谷解题P2084">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1026).jpg" class="responsive-img" alt="洛谷解题P2084">
                             
                             <span class="card-title">洛谷解题P2084</span>
                         </div>
@@ -511,7 +514,8 @@
                     <a href="/2021/10/23/20211023-luo-gu-jie-ti-p4327/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/20.png?sign=f6ef2426b31b8326b66ba9baab0526f3&t=1634051291" class="responsive-img" alt="洛谷解题P4327">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1125).jpg" class="responsive-img" alt="洛谷解题P4327">
                             
                             <span class="card-title">洛谷解题P4327</span>
                         </div>
@@ -560,7 +564,8 @@
                     <a href="/2021/10/20/20211020-tui-jian-yi-ge-vscode-xia-de-markdown-yu-fa-jian-cha-cha-jian/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/17.png?sign=10cd78093d4bd529e70541bc5f32b712&t=1634051274" class="responsive-img" alt="推荐一个vscode下的markdown语法检查插件">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (973).jpg" class="responsive-img" alt="推荐一个vscode下的markdown语法检查插件">
                             
                             <span class="card-title">推荐一个vscode下的markdown语法检查插件</span>
                         </div>
@@ -605,7 +610,8 @@
                     <a href="/2021/10/19/20211019-wei-fu-wu-ji-chu-fu-wu-zhu-ce-yu-fa-xian/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/16.png?sign=a68f61732f1c4a364408383b543c0d1c&t=1634051265" class="responsive-img" alt="微服务基础-服务注册与发现">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (383).jpg" class="responsive-img" alt="微服务基础-服务注册与发现">
                             
                             <span class="card-title">微服务基础-服务注册与发现</span>
                         </div>
@@ -650,7 +656,8 @@
                     <a href="/2021/10/18/20211018-yuan-ma-bian-yi-java-xu-ni-ji/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/15.png?sign=fcde9485a4af01069bf799a1cd9c00e3&t=1634051250" class="responsive-img" alt="源码编译java虚拟机">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (992).jpg" class="responsive-img" alt="源码编译java虚拟机">
                             
                             <span class="card-title">源码编译java虚拟机</span>
                         </div>
@@ -703,7 +710,8 @@
                     <a href="/2021/10/17/20211017-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-san/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/14.png?sign=a42658b2630a57068410b236c9556ac9&t=1634051243" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（三）">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (289).jpg" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（三）">
                             
                             <span class="card-title">容易被忽视的软件开发人员的重要能力（三）</span>
                         </div>
@@ -748,7 +756,8 @@
                     <a href="/2021/10/16/20211016restful-gui-fan-he-an-quan-lou-dong-de-chong-tu/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/13.png?sign=0a8b13cc6736e9ced0d0d603f69749a6&t=1634051236" class="responsive-img" alt="RestFul规范和安全漏洞的冲突">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1379).jpg" class="responsive-img" alt="RestFul规范和安全漏洞的冲突">
                             
                             <span class="card-title">RestFul规范和安全漏洞的冲突</span>
                         </div>
@@ -793,7 +802,8 @@
                     <a href="/2021/10/15/20211015http-de-fang-fa/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/12.png?sign=2a9dd5a38fcba6a277cb9b7f0aaf2073&t=1634051231" class="responsive-img" alt="HTTP的方法">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (166).jpg" class="responsive-img" alt="HTTP的方法">
                             
                             <span class="card-title">HTTP的方法</span>
                         </div>

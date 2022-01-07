@@ -288,10 +288,10 @@
     // 每天切换 banner 图.  Switch banner image every day.
     // 修改为使用cdn图片，读取配置文件
     // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/0.jpg?sign=5338b6d02f0ae10a2f23038b864010ba&t=1633238092,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/1.jpg?sign=cba9d5273afe93080a47743c93b98340&t=1633238099,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/2.jpg?sign=716fdba6ed2f8c9ac156c0152a825271&t=1633238108,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/3.jpg?sign=f0c186cc3837077365695b29f60fcd36&t=1633238115,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/4.jpg?sign=fd2c04c957f8b482c7d1411f3aede790&t=1633238121,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/5.jpg?sign=bf6938b528bb688bbfe8698ce761c69c&t=1633238128,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/6.jpg?sign=ece29b2028b7eea82130a8c2247a862c&t=1633238587";
+    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (994).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (995).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (996).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (997).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (998).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (999).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1000).jpg";
     var bannerImages = banners.split(',');
-    var bannerUrl = bannerImages[new Date().getDay()];
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    var bannerUrl = encodeURI(bannerImages[new Date().getDay()]);
+    $('.bg-cover').css('background-image', 'url("' + bannerUrl + '")');
 </script>
 
 
@@ -311,10 +311,19 @@
             <div class="tag-chips">
                 
                 
+                <a href="/tags/%E7%AE%A1%E7%90%86/" title="管理: 5">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="管理" style="background-color: #F9EBEA;">管理
+                        <span class="tag-length">5</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/%E7%BE%8E%E5%89%A7/" title="美剧: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="美剧" style="background-color: #F9EBEA;">美剧
+                            data-tagname="美剧" style="background-color: #F5EEF8;">美剧
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -323,7 +332,7 @@
                 <a href="/tags/%E4%BC%91%E9%97%B2/" title="休闲: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="休闲" style="background-color: #F5EEF8;">休闲
+                            data-tagname="休闲" style="background-color: #D5F5E3;">休闲
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -332,17 +341,8 @@
                 <a href="/tags/%E6%8A%80%E6%9C%AF/" title="技术: 28">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="技术" style="background-color: #D5F5E3;">技术
+                            data-tagname="技术" style="background-color: #E8F8F5;">技术
                         <span class="tag-length">28</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%AE%A1%E7%90%86/" title="管理: 5">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="管理" style="background-color: #E8F8F5;">管理
-                        <span class="tag-length">5</span>
                     </span>
                 </a>
                 
@@ -356,20 +356,20 @@
                 </a>
                 
                 
-                <a href="/tags/%E5%AD%A6%E4%B9%A0/" title="学习: 2">
+                <a href="/tags/%E7%9F%A5%E8%AF%86/" title="知识: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="学习" style="background-color: #F8F9F9;">学习
-                        <span class="tag-length">2</span>
+                            data-tagname="知识" style="background-color: #F8F9F9;">知识
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E7%9F%A5%E8%AF%86/" title="知识: 1">
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/" title="学习: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="知识" style="background-color: #82E0AA;">知识
-                        <span class="tag-length">1</span>
+                            data-tagname="学习" style="background-color: #82E0AA;">学习
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -452,7 +452,8 @@
                     <a href="/2021/10/16/20211016restful-gui-fan-he-an-quan-lou-dong-de-chong-tu/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/13.png?sign=0a8b13cc6736e9ced0d0d603f69749a6&t=1634051236" class="responsive-img" alt="RestFul规范和安全漏洞的冲突">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1379).jpg" class="responsive-img" alt="RestFul规范和安全漏洞的冲突">
                             
                             <span class="card-title">RestFul规范和安全漏洞的冲突</span>
                         </div>
@@ -483,7 +484,8 @@
                     <a href="/2021/10/15/20211015http-de-fang-fa/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/12.png?sign=2a9dd5a38fcba6a277cb9b7f0aaf2073&t=1634051231" class="responsive-img" alt="HTTP的方法">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (166).jpg" class="responsive-img" alt="HTTP的方法">
                             
                             <span class="card-title">HTTP的方法</span>
                         </div>
@@ -514,7 +516,8 @@
                     <a href="/2021/10/14/20211014-teng-xun-yun-yun-kai-fa-ji-yu-koa-bu-shu-ying-yong/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/11.png?sign=2403ff42f715def17f4973f5104a991e&t=1634051223" class="responsive-img" alt="腾讯云云开发基于koa部署应用">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1081).jpg" class="responsive-img" alt="腾讯云云开发基于koa部署应用">
                             
                             <span class="card-title">腾讯云云开发基于koa部署应用</span>
                         </div>
@@ -540,12 +543,13 @@
             </div>
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="技术, 管理" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="管理, 技术" data-aos="fade-up">
                 <div class="card">
                     <a href="/2021/10/08/20211008-guan-li-de-ben-zhi-shi-ji-fa-qian-neng-yu-shan-yi/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/7.png?sign=19a9fd78a62e28a8c909ff00d453aefa&t=1633232899" class="responsive-img" alt="管理的本质是激发潜能与善意">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (954).jpg" class="responsive-img" alt="管理的本质是激发潜能与善意">
                             
                             <span class="card-title">管理的本质是激发潜能与善意</span>
                         </div>
@@ -576,7 +580,8 @@
                     <a href="/2021/10/04/20211004-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-er/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/5.png?sign=6241ca887f4faed18f8d7fe0e47cdabc&t=1633232884" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（二）">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (101).jpg" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（二）">
                             
                             <span class="card-title">容易被忽视的软件开发人员的重要能力（二）</span>
                         </div>
@@ -607,7 +612,8 @@
                     <a href="/2021/10/03/20211003-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-yi/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/4.png?sign=c2a19e1ba1762c8ef995e0a2f948b392&t=1633230940" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（一）">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (168).jpg" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（一）">
                             
                             <span class="card-title">容易被忽视的软件开发人员的重要能力（一）</span>
                         </div>
@@ -638,7 +644,8 @@
                     <a href="/2021/10/02/20211002-zai-teng-xun-yun-yun-kai-fa-shang-bu-shu-ren-sheng-chong-kai-mo-ni-qi/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/3.png?sign=db98634d3974efa10558766e963a260a&t=1633230928" class="responsive-img" alt="在腾讯云云开发上部署人生重开模拟器">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (757).jpg" class="responsive-img" alt="在腾讯云云开发上部署人生重开模拟器">
                             
                             <span class="card-title">在腾讯云云开发上部署人生重开模拟器</span>
                         </div>
@@ -664,12 +671,13 @@
             </div>
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="技术, 管理" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="管理, 技术" data-aos="fade-up">
                 <div class="card">
                     <a href="/2021/10/01/20211001-yan-fa-guan-li-de-yi-dian-gan-xiang/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/2.png?sign=4c6383f5d00f028b93c04f83b2740efc&t=1633230914" class="responsive-img" alt="研发管理的一点感想">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1258).jpg" class="responsive-img" alt="研发管理的一点感想">
                             
                             <span class="card-title">研发管理的一点感想</span>
                         </div>

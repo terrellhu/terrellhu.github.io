@@ -288,10 +288,10 @@
     // 每天切换 banner 图.  Switch banner image every day.
     // 修改为使用cdn图片，读取配置文件
     // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/0.jpg?sign=5338b6d02f0ae10a2f23038b864010ba&t=1633238092,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/1.jpg?sign=cba9d5273afe93080a47743c93b98340&t=1633238099,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/2.jpg?sign=716fdba6ed2f8c9ac156c0152a825271&t=1633238108,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/3.jpg?sign=f0c186cc3837077365695b29f60fcd36&t=1633238115,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/4.jpg?sign=fd2c04c957f8b482c7d1411f3aede790&t=1633238121,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/5.jpg?sign=bf6938b528bb688bbfe8698ce761c69c&t=1633238128,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/6.jpg?sign=ece29b2028b7eea82130a8c2247a862c&t=1633238587";
+    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (994).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (995).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (996).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (997).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (998).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (999).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1000).jpg";
     var bannerImages = banners.split(',');
-    var bannerUrl = bannerImages[new Date().getDay()];
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    var bannerUrl = encodeURI(bannerImages[new Date().getDay()]);
+    $('.bg-cover').css('background-image', 'url("' + bannerUrl + '")');
 </script>
 
 
@@ -312,10 +312,19 @@
                 
                 
                 
+                <a href="/categories/%E5%B7%A5%E4%BD%9C/" title="工作: 6">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F9EBEA;">工作
+                        <span class="tag-length">6</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/" title="休闲娱乐: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">休闲娱乐
+                            style="background-color: #F5EEF8;">休闲娱乐
                         <span class="tag-length">3</span>
                     </span>
                 </a>
@@ -324,17 +333,8 @@
                 <a href="/categories/%E6%8A%80%E6%9C%AF/" title="技术: 24">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">技术
+                            style="background-color: #D5F5E3;">技术
                         <span class="tag-length">24</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%B7%A5%E4%BD%9C/" title="工作: 6">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">工作
-                        <span class="tag-length">6</span>
                     </span>
                 </a>
                 
@@ -364,7 +364,8 @@
                     <a href="/2021/12/27/20211227-hei-ke-di-guo-4/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/35.png?sign=e220c6921407bc40039ab36496d0fe57&t=1636534328" class="responsive-img" alt="黑客帝国4">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1191).jpg" class="responsive-img" alt="黑客帝国4">
                             
                             <span class="card-title">黑客帝国4</span>
                         </div>
@@ -409,7 +410,8 @@
                     <a href="/2021/12/17/20211217-bai-jin-liao-liang-ge-you-xi/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/34.png?sign=5ddb1bcdb47b426aed8413cf740d2608&t=1636534319" class="responsive-img" alt="白金了两个游戏">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1231).jpg" class="responsive-img" alt="白金了两个游戏">
                             
                             <span class="card-title">白金了两个游戏</span>
                         </div>
@@ -454,7 +456,8 @@
                     <a href="/2021/11/25/20211125-ji-ge-di-san-fang-ke-hu-duan/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/35.png?sign=e220c6921407bc40039ab36496d0fe57&t=1636534328" class="responsive-img" alt="几个第三方客户端">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1372).jpg" class="responsive-img" alt="几个第三方客户端">
                             
                             <span class="card-title">几个第三方客户端</span>
                         </div>
@@ -503,7 +506,8 @@
                     <a href="/2021/10/12/20211012-cong-luo-mou-ping-shi-jian-kan-ming-ji-zhe-de-shui-ping/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/9.png?sign=da13696b1a80ac39678af1545bfe8daa&t=1633232911" class="responsive-img" alt="从罗某平事件看名记者的水平">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (988).jpg" class="responsive-img" alt="从罗某平事件看名记者的水平">
                             
                             <span class="card-title">从罗某平事件看名记者的水平</span>
                         </div>
@@ -548,7 +552,8 @@
                     <a href="/2021/10/09/20211009-zhi-shi-de-chen-dian-yu-ji-lei/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/8.png?sign=be41c658a3a506a36e476db09cf41071&t=1633232905" class="responsive-img" alt="知识的沉淀与积累">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (722).jpg" class="responsive-img" alt="知识的沉淀与积累">
                             
                             <span class="card-title">知识的沉淀与积累</span>
                         </div>
@@ -593,7 +598,8 @@
                     <a href="/2021/10/06/20211006-chu-sheng-ren-kou-da-die-yi-dian-jie-shi/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/6.png?sign=aba29c9b33226b222f5aa02e5d5d9c00&t=1633232890" class="responsive-img" alt="出生人口大跌一点解释">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (160).jpg" class="responsive-img" alt="出生人口大跌一点解释">
                             
                             <span class="card-title">出生人口大跌一点解释</span>
                         </div>
@@ -638,7 +644,8 @@
                     <a href="/2021/10/05/20211005-ying-bu-ying-gai-gei-hai-zi-wan-you-xi/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/999.jpg?sign=5275f777aa360299f178519951aa1f56&t=1633441028" class="responsive-img" alt="应不应该给孩子玩游戏">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (761).jpg" class="responsive-img" alt="应不应该给孩子玩游戏">
                             
                             <span class="card-title">应不应该给孩子玩游戏</span>
                         </div>

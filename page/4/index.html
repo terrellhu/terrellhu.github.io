@@ -289,10 +289,10 @@
     // 每天切换 banner 图.  Switch banner image every day.
     // 修改为使用cdn图片，读取配置文件
     // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/0.jpg?sign=5338b6d02f0ae10a2f23038b864010ba&t=1633238092,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/1.jpg?sign=cba9d5273afe93080a47743c93b98340&t=1633238099,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/2.jpg?sign=716fdba6ed2f8c9ac156c0152a825271&t=1633238108,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/3.jpg?sign=f0c186cc3837077365695b29f60fcd36&t=1633238115,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/4.jpg?sign=fd2c04c957f8b482c7d1411f3aede790&t=1633238121,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/5.jpg?sign=bf6938b528bb688bbfe8698ce761c69c&t=1633238128,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/6.jpg?sign=ece29b2028b7eea82130a8c2247a862c&t=1633238587";
+    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (994).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (995).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (996).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (997).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (998).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (999).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1000).jpg";
     var bannerImages = banners.split(',');
-    var bannerUrl = bannerImages[new Date().getDay()];
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    var bannerUrl = encodeURI(bannerImages[new Date().getDay()]);
+    $('.bg-cover').css('background-image', 'url("' + bannerUrl + '")');
 </script>
 
 
@@ -316,7 +316,7 @@
                     <a href="/2021/10/11/20211011-he-jin-zhuang-bei-5-huan-tong/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/998.jpeg?sign=7275f027ff39f98e7d104c745f53e6d1&t=1633953232" class="responsive-img" alt="合金装备5幻痛">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1026).jpg" class="responsive-img" alt="合金装备5幻痛">
                             
                             <span class="card-title">合金装备5幻痛</span>
                         </div>
@@ -364,7 +364,7 @@
                     <a href="/2021/10/09/20211009-zhi-shi-de-chen-dian-yu-ji-lei/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/8.png?sign=be41c658a3a506a36e476db09cf41071&t=1633232905" class="responsive-img" alt="知识的沉淀与积累">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1025).jpg" class="responsive-img" alt="知识的沉淀与积累">
                             
                             <span class="card-title">知识的沉淀与积累</span>
                         </div>
@@ -412,7 +412,7 @@
                     <a href="/2021/10/08/20211008-guan-li-de-ben-zhi-shi-ji-fa-qian-neng-yu-shan-yi/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/7.png?sign=19a9fd78a62e28a8c909ff00d453aefa&t=1633232899" class="responsive-img" alt="管理的本质是激发潜能与善意">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1024).jpg" class="responsive-img" alt="管理的本质是激发潜能与善意">
                             
                             <span class="card-title">管理的本质是激发潜能与善意</span>
                         </div>
@@ -444,12 +444,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                            <span class="chip bg-color">技术</span>
-                        </a>
-                        
                         <a href="/tags/%E7%AE%A1%E7%90%86/">
                             <span class="chip bg-color">管理</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                            <span class="chip bg-color">技术</span>
                         </a>
                         
                     </div>
@@ -464,7 +464,7 @@
                     <a href="/2021/10/06/20211006-chu-sheng-ren-kou-da-die-yi-dian-jie-shi/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/6.png?sign=aba29c9b33226b222f5aa02e5d5d9c00&t=1633232890" class="responsive-img" alt="出生人口大跌一点解释">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1023).jpg" class="responsive-img" alt="出生人口大跌一点解释">
                             
                             <span class="card-title">出生人口大跌一点解释</span>
                         </div>
@@ -512,7 +512,7 @@
                     <a href="/2021/10/05/20211005-ying-bu-ying-gai-gei-hai-zi-wan-you-xi/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/999.jpg?sign=5275f777aa360299f178519951aa1f56&t=1633441028" class="responsive-img" alt="应不应该给孩子玩游戏">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1022).jpg" class="responsive-img" alt="应不应该给孩子玩游戏">
                             
                             <span class="card-title">应不应该给孩子玩游戏</span>
                         </div>
@@ -560,7 +560,7 @@
                     <a href="/2021/10/04/20211004-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-er/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/5.png?sign=6241ca887f4faed18f8d7fe0e47cdabc&t=1633232884" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（二）">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1021).jpg" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（二）">
                             
                             <span class="card-title">容易被忽视的软件开发人员的重要能力（二）</span>
                         </div>
@@ -608,7 +608,7 @@
                     <a href="/2021/10/03/20211003-rong-yi-bei-hu-shi-de-ruan-jian-kai-fa-ren-yuan-de-chong-yao-neng-li-yi/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/4.png?sign=c2a19e1ba1762c8ef995e0a2f948b392&t=1633230940" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（一）">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1020).jpg" class="responsive-img" alt="容易被忽视的软件开发人员的重要能力（一）">
                             
                             <span class="card-title">容易被忽视的软件开发人员的重要能力（一）</span>
                         </div>
@@ -656,7 +656,7 @@
                     <a href="/2021/10/02/20211002-zai-teng-xun-yun-yun-kai-fa-shang-bu-shu-ren-sheng-chong-kai-mo-ni-qi/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/3.png?sign=db98634d3974efa10558766e963a260a&t=1633230928" class="responsive-img" alt="在腾讯云云开发上部署人生重开模拟器">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1019).jpg" class="responsive-img" alt="在腾讯云云开发上部署人生重开模拟器">
                             
                             <span class="card-title">在腾讯云云开发上部署人生重开模拟器</span>
                         </div>
@@ -704,7 +704,7 @@
                     <a href="/2021/10/01/20211001-yan-fa-guan-li-de-yi-dian-gan-xiang/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/2.png?sign=4c6383f5d00f028b93c04f83b2740efc&t=1633230914" class="responsive-img" alt="研发管理的一点感想">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1018).jpg" class="responsive-img" alt="研发管理的一点感想">
                             
                             <span class="card-title">研发管理的一点感想</span>
                         </div>
@@ -736,12 +736,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                            <span class="chip bg-color">技术</span>
-                        </a>
-                        
                         <a href="/tags/%E7%AE%A1%E7%90%86/">
                             <span class="chip bg-color">管理</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                            <span class="chip bg-color">技术</span>
                         </a>
                         
                     </div>
@@ -756,7 +756,7 @@
                     <a href="/2021/09/30/20210930-zheng-zai-kan-de-liang-bu-kong-bu-mei-ju/">
                         <div class="card-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/1.png?sign=6e0f55ee94016368cab52596328574e1&t=1633230884" class="responsive-img" alt="正在看的两部恐怖美剧">
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1017).jpg" class="responsive-img" alt="正在看的两部恐怖美剧">
                             
                             <span class="card-title">正在看的两部恐怖美剧</span>
                         </div>

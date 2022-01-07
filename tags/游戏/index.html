@@ -288,10 +288,10 @@
     // 每天切换 banner 图.  Switch banner image every day.
     // 修改为使用cdn图片，读取配置文件
     // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/0.jpg?sign=5338b6d02f0ae10a2f23038b864010ba&t=1633238092,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/1.jpg?sign=cba9d5273afe93080a47743c93b98340&t=1633238099,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/2.jpg?sign=716fdba6ed2f8c9ac156c0152a825271&t=1633238108,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/3.jpg?sign=f0c186cc3837077365695b29f60fcd36&t=1633238115,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/4.jpg?sign=fd2c04c957f8b482c7d1411f3aede790&t=1633238121,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/5.jpg?sign=bf6938b528bb688bbfe8698ce761c69c&t=1633238128,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bannerimages/6.jpg?sign=ece29b2028b7eea82130a8c2247a862c&t=1633238587";
+    var banners = "https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (994).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (995).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (996).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (997).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (998).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (999).jpg,https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1000).jpg";
     var bannerImages = banners.split(',');
-    var bannerUrl = bannerImages[new Date().getDay()];
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    var bannerUrl = encodeURI(bannerImages[new Date().getDay()]);
+    $('.bg-cover').css('background-image', 'url("' + bannerUrl + '")');
 </script>
 
 
@@ -311,10 +311,19 @@
             <div class="tag-chips">
                 
                 
+                <a href="/tags/%E7%AE%A1%E7%90%86/" title="管理: 5">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="管理" style="background-color: #F9EBEA;">管理
+                        <span class="tag-length">5</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/%E7%BE%8E%E5%89%A7/" title="美剧: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="美剧" style="background-color: #F9EBEA;">美剧
+                            data-tagname="美剧" style="background-color: #F5EEF8;">美剧
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -323,7 +332,7 @@
                 <a href="/tags/%E4%BC%91%E9%97%B2/" title="休闲: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="休闲" style="background-color: #F5EEF8;">休闲
+                            data-tagname="休闲" style="background-color: #D5F5E3;">休闲
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -332,17 +341,8 @@
                 <a href="/tags/%E6%8A%80%E6%9C%AF/" title="技术: 28">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="技术" style="background-color: #D5F5E3;">技术
+                            data-tagname="技术" style="background-color: #E8F8F5;">技术
                         <span class="tag-length">28</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%AE%A1%E7%90%86/" title="管理: 5">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="管理" style="background-color: #E8F8F5;">管理
-                        <span class="tag-length">5</span>
                     </span>
                 </a>
                 
@@ -356,20 +356,20 @@
                 </a>
                 
                 
-                <a href="/tags/%E5%AD%A6%E4%B9%A0/" title="学习: 2">
+                <a href="/tags/%E7%9F%A5%E8%AF%86/" title="知识: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="学习" style="background-color: #F8F9F9;">学习
-                        <span class="tag-length">2</span>
+                            data-tagname="知识" style="background-color: #F8F9F9;">知识
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/%E7%9F%A5%E8%AF%86/" title="知识: 1">
+                <a href="/tags/%E5%AD%A6%E4%B9%A0/" title="学习: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="知识" style="background-color: #82E0AA;">知识
-                        <span class="tag-length">1</span>
+                            data-tagname="学习" style="background-color: #82E0AA;">学习
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -452,7 +452,8 @@
                     <a href="/2021/12/17/20211217-bai-jin-liao-liang-ge-you-xi/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/34.png?sign=5ddb1bcdb47b426aed8413cf740d2608&t=1636534319" class="responsive-img" alt="白金了两个游戏">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1231).jpg" class="responsive-img" alt="白金了两个游戏">
                             
                             <span class="card-title">白金了两个游戏</span>
                         </div>
@@ -483,7 +484,8 @@
                     <a href="/2021/10/11/20211011-he-jin-zhuang-bei-5-huan-tong/">
                         <div class="card-image tag-image">
                             
-                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/covers/998.jpeg?sign=7275f027ff39f98e7d104c745f53e6d1&t=1633953232" class="responsive-img" alt="合金装备5幻痛">
+                            
+                            <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1253).jpg" class="responsive-img" alt="合金装备5幻痛">
                             
                             <span class="card-title">合金装备5幻痛</span>
                         </div>
