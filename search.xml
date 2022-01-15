@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>UE4中怎么避免攻击动作的overlap事件重复触发</title>
+      <link href="/2022/01/15/20220115ue4-zhong-zen-me-bi-mian-gong-ji-dong-zuo-de-overlap-shi-jian-chong-fu-hong-fa/"/>
+      <url>/2022/01/15/20220115ue4-zhong-zen-me-bi-mian-gong-ji-dong-zuo-de-overlap-shi-jian-chong-fu-hong-fa/</url>
+      
+        <content type="html"><![CDATA[<p>    跟着教程学习的时候，发现做了一个剑攻击动画，站在特定位置，一次攻击的出剑和回剑会触发两次overlap事件，这是不希望看到的结果，查了一下，要么说的太高深，法线方向什么的都用上了，要么就解决不了，只有一个思路比较靠谱。<br>    就是通过动画的时间来控制是否触发伤害，比如一次砍人动画长1.5s，其中0.85是把剑挥出去，那可以设置一个checktime和check状态两个值，当动画触发时，同时设置check为真，当overlap触发后，判断check为真，则执行后续伤害处理；同时delay了checktime时间后把check状态为假，这时再有overlap事件也不再处理。如此可以较好的处理这个动作的判定问题。<br>    同时又想到动作类游戏，快速连续的打击，这里的判定不知道要怎么实现，后面继续学习了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>创业公司的绩效考核</title>
       <link href="/2022/01/06/20220106-chuang-ye-gong-si-de-ji-xiao-kao-he/"/>
       <url>/2022/01/06/20220106-chuang-ye-gong-si-de-ji-xiao-kao-he/</url>
@@ -519,9 +546,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       
@@ -854,9 +881,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       
@@ -1006,9 +1033,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       

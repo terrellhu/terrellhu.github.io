@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="几个第三方客户端, 求生之路">
+    <meta name="keywords" content="UE4中怎么避免攻击动作的overlap事件重复触发, 求生之路">
     <meta name="description" content="技术文章、人生感悟、业余吐槽">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>几个第三方客户端 | 求生之路</title>
+    <title>UE4中怎么避免攻击动作的overlap事件重复触发 | 求生之路</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1006).jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1042).jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">几个第三方客户端</h1>
+                    <h1 class="description center-align post-title">UE4中怎么避免攻击动作的overlap事件重复触发</h1>
                 </div>
             </div>
         </div>
@@ -281,8 +281,8 @@
                                 <span class="chip bg-color">技术</span>
                             </a>
                         
-                            <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                                <span class="chip bg-color">生活</span>
+                            <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                                <span class="chip bg-color">游戏</span>
                             </a>
                         
                     </div>
@@ -293,8 +293,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                生活
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
                             </a>
                         
                     </div>
@@ -306,7 +306,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-25
+                    2022-01-15
                 </div>
                 
 
@@ -315,7 +315,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    148
+                    257
                 </div>
                 
 
@@ -337,12 +337,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>    自从华为被google封了后，好多客户端就没法直接更新使用了，facebook，instagram，twitter，yutobe，几个必备都用得很难。通过第三方客户端可以一定程度解决问题  </p>
-<ol>
-<li>twitterAPP即便成功装上华为手机，打开也是闪退，必须使用第三方客户端，现在安装了twidereX，还在申请app中，比较麻烦，后面再说效果</li>
-<li>facebook和insta比较厚道，可以直接使用，但是最好安装<a target="_blank" rel="noopener" href="https://apkpure.com/">apkpure</a>进行更新管理</li>
-<li>youtobe直接使用<a target="_blank" rel="noopener" href="https://github.com/TeamNewPipe/NewPipe">newpipe</a>开源第三方客户端，即轻量又好用</li>
-</ol>
+                <p>    跟着教程学习的时候，发现做了一个剑攻击动画，站在特定位置，一次攻击的出剑和回剑会触发两次overlap事件，这是不希望看到的结果，查了一下，要么说的太高深，法线方向什么的都用上了，要么就解决不了，只有一个思路比较靠谱。<br>    就是通过动画的时间来控制是否触发伤害，比如一次砍人动画长1.5s，其中0.85是把剑挥出去，那可以设置一个checktime和check状态两个值，当动画触发时，同时设置check为真，当overlap触发后，判断check为真，则执行后续伤害处理；同时delay了checktime时间后把check状态为假，这时再有overlap事件也不再处理。如此可以较好的处理这个动作的判定问题。<br>    同时又想到动作类游戏，快速连续的打击，这里的判定不知道要怎么实现，后面继续学习了。</p>
 
                 
             </div>
@@ -369,7 +364,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yarntech.cn/2021/11/25/20211125-ji-ge-di-san-fang-ke-hu-duan/">http://yarntech.cn/2021/11/25/20211125-ji-ge-di-san-fang-ke-hu-duan/</a>
+                    <a href="http://yarntech.cn/2022/01/15/20220115ue4-zhong-zen-me-bi-mian-gong-ji-dong-zuo-de-overlap-shi-jian-chong-fu-hong-fa/">http://yarntech.cn/2022/01/15/20220115ue4-zhong-zen-me-bi-mian-gong-ji-dong-zuo-de-overlap-shi-jian-chong-fu-hong-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -411,8 +406,8 @@
                                     <span class="chip bg-color">技术</span>
                                 </a>
                             
-                                <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                                    <span class="chip bg-color">生活</span>
+                                <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                                    <span class="chip bg-color">游戏</span>
                                 </a>
                             
                         </div>
@@ -858,43 +853,49 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/12/17/20211217-bai-jin-liao-liang-ge-you-xi/">
+                <a href="/2022/01/15/20220115ue4-zhong-zen-me-bi-mian-gong-ji-dong-zuo-de-overlap-shi-jian-chong-fu-hong-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1231).jpg" class="responsive-img" alt="白金了两个游戏">
+                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (533).jpg" class="responsive-img" alt="UE4中怎么避免攻击动作的overlap事件重复触发">
                         
-                        <span class="card-title">白金了两个游戏</span>
+                        <span class="card-title">UE4中怎么避免攻击动作的overlap事件重复触发</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            刺客信条3解放
+                            UE4overlap
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    生活
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                        <span class="chip bg-color">技术</span>
+                    </a>
                     
                     <a href="/tags/%E6%B8%B8%E6%88%8F/">
                         <span class="chip bg-color">游戏</span>
@@ -911,31 +912,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/20/20211120nacos-zai-k8s-li-shi-yong-dan-ji-mo-shi/">
+                <a href="/2022/01/06/20220106-chuang-ye-gong-si-de-ji-xiao-kao-he/">
                     <div class="card-image">
                         
                         
-                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (318).jpg" class="responsive-img" alt="nacos在k8s里使用单机模式">
+                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1094).jpg" class="responsive-img" alt="创业公司的绩效考核">
                         
-                        <span class="card-title">nacos在k8s里使用单机模式</span>
+                        <span class="card-title">创业公司的绩效考核</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            nacosk8s
+                            绩效
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
+                            <a href="/categories/%E5%B7%A5%E4%BD%9C/" class="post-category">
+                                    工作
                                 </a>
                             
                             
@@ -945,8 +946,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">技术</span>
+                    <a href="/tags/%E7%AE%A1%E7%90%86/">
+                        <span class="chip bg-color">管理</span>
                     </a>
                     
                 </div>
