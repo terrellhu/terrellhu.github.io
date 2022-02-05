@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>win11下docker启动失败</title>
+      <link href="/2022/02/05/20220205win11-xia-docker-qi-dong-shi-bai/"/>
+      <url>/2022/02/05/20220205win11-xia-docker-qi-dong-shi-bai/</url>
+      
+        <content type="html"><![CDATA[<p>    报了一堆乱码错误提示，直接用乱码百度，居然出了结果，看不太明白，大概的原因应该是某个代理和docker冲突了。。但是我也没装啥，唯一装的就是UU加速器，很可能是这个软件，但是也没有启动UU加速器，docker还是启动失败，再观察几天看看，还有个终极解决方案，但是据说用了后代理会无法使用，暂时先不用了。<br>管理员权限打开cmd窗口，执行如下命令即可，执行完后会提示重启，但是其实不用重启，直接重启docker即可</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh winsock reset</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>20220127过年了</title>
       <link href="/2022/01/27/20220127-guo-nian-liao/"/>
       <url>/2022/01/27/20220127-guo-nian-liao/</url>
@@ -95,9 +120,9 @@
       
         <tags>
             
-            <tag> 游戏 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 游戏 </tag>
             
         </tags>
       
@@ -621,9 +646,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       
@@ -956,9 +981,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       
@@ -1108,9 +1133,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       
