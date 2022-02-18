@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>20210218WorldMachine的问题</title>
+      <link href="/2022/02/18/20210218worldmachine-de-wen-ti/"/>
+      <url>/2022/02/18/20210218worldmachine-de-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<p>    下载了最新版的WorldMachine，结果和教程上不太一样，导出的高度图导入到UE4中Landscape的轴点总是上最上面。<br>    花了两天时间，看了无数教程和视频，教程都是用的旧版本，参数不能一一对应，对这个问题找不到任何思路，终于在用了程序自带的示例3发现导入正常，于是一一对比参数，开始发现是Pad&nbsp;coordinate&nbsp;digits这个参数导致的，看了下官方说明，</p><ul><li>Pad coordinate digits: This determines whether leading zeros are applied to the coordinate numbers. for example, in a 30x30 tileset.  </li></ul><p>    看说明似乎只是控制文件名中的坐标前导0数字的，不应该影响到轴心点，于是多次实验，最后排除这个参数的影响，基本确定是origin座标点设置的问题，负值设置的越大，则导入时的轴心点越靠近底部。但是这个也不一定是主要因素，比如将origin设置非常大，或者和长宽一样，轴心点也不会偏离太严重，准备暂时放弃尝试了，现在至少用着正常就行。。<br>    查了官方对origin的描述，说是世界空间中渲染范围的中心。不太懂这个意思，希望后面能有更详细的说明，网上的版本都没有这个设置。  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 游戏开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>谷爱凌现在最应该做的就是为丰县事件发声</title>
       <link href="/2022/02/09/20220209-gu-ai-ling-xian-zai-zui-ying-gai-zuo-de-jiu-shi-wei-feng-xian-shi-jian-fa-sheng/"/>
       <url>/2022/02/09/20220209-gu-ai-ling-xian-zai-zui-ying-gai-zuo-de-jiu-shi-wei-feng-xian-shi-jian-fa-sheng/</url>
@@ -145,9 +172,9 @@
       
         <tags>
             
-            <tag> 游戏 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 游戏 </tag>
             
         </tags>
       
@@ -671,9 +698,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       
@@ -698,9 +725,9 @@
       
         <tags>
             
-            <tag> 生活 </tag>
-            
             <tag> 美剧 </tag>
+            
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -1006,9 +1033,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       
@@ -1158,9 +1185,9 @@
       
         <tags>
             
-            <tag> 管理 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 管理 </tag>
             
         </tags>
       

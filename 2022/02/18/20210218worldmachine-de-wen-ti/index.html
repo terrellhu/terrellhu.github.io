@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="鬼作秀（Creepshow）与鬼玩人（The Evil Dead）, 求生之路">
+    <meta name="keywords" content="20210218WorldMachine的问题, 求生之路">
     <meta name="description" content="技术文章、人生感悟、业余吐槽">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>鬼作秀（Creepshow）与鬼玩人（The Evil Dead） | 求生之路</title>
+    <title>20210218WorldMachine的问题 | 求生之路</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1036).jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1048).jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">鬼作秀（Creepshow）与鬼玩人（The Evil Dead）</h1>
+                    <h1 class="description center-align post-title">20210218WorldMachine的问题</h1>
                 </div>
             </div>
         </div>
@@ -277,12 +277,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%BE%8E%E5%89%A7/">
-                                <span class="chip bg-color">美剧</span>
+                            <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                <span class="chip bg-color">技术</span>
                             </a>
                         
-                            <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                                <span class="chip bg-color">生活</span>
+                            <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">
+                                <span class="chip bg-color">游戏开发</span>
                             </a>
                         
                     </div>
@@ -293,8 +293,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/" class="post-category">
-                                休闲娱乐
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
                             </a>
                         
                     </div>
@@ -306,7 +306,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-10-21
+                    2022-02-18
                 </div>
                 
 
@@ -315,7 +315,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    215
+                    348
                 </div>
                 
 
@@ -337,7 +337,11 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>    看了几集鬼作秀，发现很寡淡，即不血腥，也不恐怖，都是一个个小故事的合集，一集2个故事，一个故事约20分钟，挺无聊的。这位导演现在除了顶着丧尸片开创者的头衔，貌似没有什么优秀的恐怖片了。<br>    反而是鬼玩人的导演，搞了3季的鬼玩人美剧，真的是超出预期，血腥，搞笑，还有点点恐怖感，主演真是靠这个系列从青年拍到老年了。<br>    鬼玩人系列之前是3部电影，前2部已经没有什么印象了，但是第3部的结局至今记忆犹新，那是20多年前了，当看着主角服了药几百后醒来时，世界已成废墟，对当时幼小的我的心灵冲击太大了！</p>
+                <p>    下载了最新版的WorldMachine，结果和教程上不太一样，导出的高度图导入到UE4中Landscape的轴点总是上最上面。<br>    花了两天时间，看了无数教程和视频，教程都是用的旧版本，参数不能一一对应，对这个问题找不到任何思路，终于在用了程序自带的示例3发现导入正常，于是一一对比参数，开始发现是Pad&nbsp;coordinate&nbsp;digits这个参数导致的，看了下官方说明，</p>
+<ul>
+<li>Pad coordinate digits: This determines whether leading zeros are applied to the coordinate numbers. for example, in a 30x30 tileset.  </li>
+</ul>
+<p>    看说明似乎只是控制文件名中的坐标前导0数字的，不应该影响到轴心点，于是多次实验，最后排除这个参数的影响，基本确定是origin座标点设置的问题，负值设置的越大，则导入时的轴心点越靠近底部。但是这个也不一定是主要因素，比如将origin设置非常大，或者和长宽一样，轴心点也不会偏离太严重，准备暂时放弃尝试了，现在至少用着正常就行。。<br>    查了官方对origin的描述，说是世界空间中渲染范围的中心。不太懂这个意思，希望后面能有更详细的说明，网上的版本都没有这个设置。  </p>
 
                 
             </div>
@@ -364,7 +368,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yarntech.cn/2021/10/21/20211021-gui-zuo-xiu-yu-gui-wan-ren/">http://yarntech.cn/2021/10/21/20211021-gui-zuo-xiu-yu-gui-wan-ren/</a>
+                    <a href="http://yarntech.cn/2022/02/18/20210218worldmachine-de-wen-ti/">http://yarntech.cn/2022/02/18/20210218worldmachine-de-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -402,12 +406,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%BE%8E%E5%89%A7/">
-                                    <span class="chip bg-color">美剧</span>
+                                <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                    <span class="chip bg-color">技术</span>
                                 </a>
                             
-                                <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                                    <span class="chip bg-color">生活</span>
+                                <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">
+                                    <span class="chip bg-color">游戏开发</span>
                                 </a>
                             
                         </div>
@@ -853,79 +857,28 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/10/22/20211022-guan-li-zhe-kao-he-de-ji-ge-wei-du/">
+                <a href="/2022/02/18/20210218worldmachine-de-wen-ti/">
                     <div class="card-image">
                         
-                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1037).jpg" class="responsive-img" alt="管理者考核的几个维度">
+                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1048).jpg" class="responsive-img" alt="20210218WorldMachine的问题">
                         
-                        <span class="card-title">管理者考核的几个维度</span>
+                        <span class="card-title">20210218WorldMachine的问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            考核管理者
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-22
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%B7%A5%E4%BD%9C/" class="post-category">
-                                    工作
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">技术</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%AE%A1%E7%90%86/">
-                        <span class="chip bg-color">管理</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/10/20/20211020-tui-jian-yi-ge-vscode-xia-de-markdown-yu-fa-jian-cha-cha-jian/">
-                    <div class="card-image">
-                        
-                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1035).jpg" class="responsive-img" alt="推荐一个vscode下的markdown语法检查插件">
-                        
-                        <span class="card-title">推荐一个vscode下的markdown语法检查插件</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            markdown语法
+                            worldmachine
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-18
                             </span>
                         <span class="publish-author">
                             
@@ -939,11 +892,64 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/%E6%8A%80%E6%9C%AF/">
                         <span class="chip bg-color">技术</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">
+                        <span class="chip bg-color">游戏开发</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/02/09/20220209-gu-ai-ling-xian-zai-zui-ying-gai-zuo-de-jiu-shi-wei-feng-xian-shi-jian-fa-sheng/">
+                    <div class="card-image">
+                        
+                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1047).jpg" class="responsive-img" alt="谷爱凌现在最应该做的就是为丰县事件发声">
+                        
+                        <span class="card-title">谷爱凌现在最应该做的就是为丰县事件发声</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            丰县
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    生活
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%94%9F%E6%B4%BB/">
+                        <span class="chip bg-color">生活</span>
                     </a>
                     
                 </div>
