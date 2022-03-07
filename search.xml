@@ -4,9 +4,59 @@
   
     
     <entry>
-      <title>20210218WorldMachine的问题</title>
-      <link href="/2022/02/18/20210218worldmachine-de-wen-ti/"/>
-      <url>/2022/02/18/20210218worldmachine-de-wen-ti/</url>
+      <title>whataboutism之我见</title>
+      <link href="/2022/03/07/20220307whataboutism-zhi-wo-jian/"/>
+      <url>/2022/03/07/20220307whataboutism-zhi-wo-jian/</url>
+      
+        <content type="html"><![CDATA[<p>    react的回复带火了whataboutism这个词，大致意思可以翻译为“那又怎么说”或者“那谁还XXX了”这种意思，总的来说，结合当前的国际形势，无非就是我们在说乌克兰的人民在受苦，你不要跟我扯伊拉克、伊朗、叙利亚、巴勒斯坦、顿巴斯、非洲XXX……等等等等，此处省略100个国家。<br>    其实这些问题好回答吗？很好回答，只要你在回复一下我们同样谴责XX在XX做的事就行了，按说漂亮国这么言论自由的环境，连空气都是自由的，这么说很难吗？但是我偏不，我就要说你是whataboutism，充分体现漂亮国霸权思维逻辑，我不止要打你，你连说都不能说我，就这也算了，反正大家都习惯了。但是国内的一帮人就真是没有下限，3亿美刀的作用不小，马上有人跟进解读，引经据典，鲁迅都批判过……。还有一些人，涉及到灯塔的问题就无法深度思考，只能无脑赞同，即便灯塔拿只臭脚出来，都是香的，这也不能怪他们。<br>    看到前同事的朋友圈有感，希望大家都有独立思考的精神，不要随便去捧臭脚。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>反战不反美，那你反个鬼</title>
+      <link href="/2022/03/04/20220304-fan-zhan-bu-fan-mei-na-ni-fan-ge-gui/"/>
+      <url>/2022/03/04/20220304-fan-zhan-bu-fan-mei-na-ni-fan-ge-gui/</url>
+      
+        <content type="html"><![CDATA[<p>    或许我的心比较硬，真的对乌克兰人民没法共情，今天看到一句话，如果要共情，也要共情乌克兰的人民。或许我也是在共情，共情的是未来有可能被欧美同样对待的中国人民吧。<br>    网上各种人拿着各种理论各种正义的言论，反战反XXX，这些人真的只能分两类，一种是程心一样的圣母，听到反战两个字就高潮，觉得自己境界就上去了，别人都是SB；还有一种引经据典，找寻理论基础，什么正义、伦理，都靠上边的理论都上一套，反正没人听得懂，然后说别人都是小学生，只有他看得书多。截个不知道哪本书里的断章取意的段落，来证明自己的书读得多，有理论基础。连TMD现实都还没分清楚就自我感觉牛B了。满口的仁义道德公平正义，仿佛卫道士附体，我一直以来坚信的一点，嘴上叫得越厉害，越没有。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WorldMachine的问题</title>
+      <link href="/2022/02/18/20220218worldmachine-de-wen-ti/"/>
+      <url>/2022/02/18/20220218worldmachine-de-wen-ti/</url>
       
         <content type="html"><![CDATA[<p>    下载了最新版的WorldMachine，结果和教程上不太一样，导出的高度图导入到UE4中Landscape的轴点总是上最上面。<br>    花了两天时间，看了无数教程和视频，教程都是用的旧版本，参数不能一一对应，对这个问题找不到任何思路，终于在用了程序自带的示例3发现导入正常，于是一一对比参数，开始发现是Pad&nbsp;coordinate&nbsp;digits这个参数导致的，看了下官方说明，</p><ul><li>Pad coordinate digits: This determines whether leading zeros are applied to the coordinate numbers. for example, in a 30x30 tileset.  </li></ul><p>    看说明似乎只是控制文件名中的坐标前导0数字的，不应该影响到轴心点，于是多次实验，最后排除这个参数的影响，基本确定是origin座标点设置的问题，负值设置的越大，则导入时的轴心点越靠近底部。但是这个也不一定是主要因素，比如将origin设置非常大，或者和长宽一样，轴心点也不会偏离太严重，准备暂时放弃尝试了，现在至少用着正常就行。。<br>    查了官方对origin的描述，说是世界空间中渲染范围的中心。不太懂这个意思，希望后面能有更详细的说明，网上的版本都没有这个设置。  </p>]]></content>
       
@@ -172,9 +222,9 @@
       
         <tags>
             
-            <tag> 技术 </tag>
-            
             <tag> 游戏 </tag>
+            
+            <tag> 技术 </tag>
             
         </tags>
       
@@ -698,9 +748,9 @@
       
         <tags>
             
-            <tag> 技术 </tag>
-            
             <tag> 管理 </tag>
+            
+            <tag> 技术 </tag>
             
         </tags>
       
@@ -725,9 +775,9 @@
       
         <tags>
             
-            <tag> 美剧 </tag>
-            
             <tag> 生活 </tag>
+            
+            <tag> 美剧 </tag>
             
         </tags>
       
@@ -1033,9 +1083,9 @@
       
         <tags>
             
-            <tag> 技术 </tag>
-            
             <tag> 管理 </tag>
+            
+            <tag> 技术 </tag>
             
         </tags>
       
@@ -1185,9 +1235,9 @@
       
         <tags>
             
-            <tag> 技术 </tag>
-            
             <tag> 管理 </tag>
+            
+            <tag> 技术 </tag>
             
         </tags>
       
