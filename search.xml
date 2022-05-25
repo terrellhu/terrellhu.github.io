@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>UE5C++折腾记</title>
+      <link href="/2022/05/25/20220525ue5c-zhe-teng-ji/"/>
+      <url>/2022/05/25/20220525ue5c-zhe-teng-ji/</url>
+      
+        <content type="html"><![CDATA[<p>    头脑发热在udemy买了UE5C++射击游戏开发课程，结果从第4课需要打包联机后，就开始了无限折腾之旅。  </p><ul><li>打包失败，报一个assertion错误，百度根本查不到，google一查就出来了，居然是ue5的bug，<a href="https://forums.unrealengine.com/t/ue5-dedicated-server-error-assertion-failed-index-index-none/516571/38">解决方案</a><br>虽然里面提到了3种方式，但是实际测试下来，其实就一种可用，即修改引擎源码，并重新编译UE5<a href="https://github.com/EpicGames/UnrealEngine/commit/2d750f27951d0a18c820c38f873fbf5e6a3587c7">bug</a>，已经有人提交了修复，但是5.0.2版本不知道什么时候才能正式发布，只有自己修改编译</li><li>其余还有几种方式，只能避免打包运行报错，但是对后续的变更基本无法解决</li><li>然后就是打包时报json文件的version不支持，这个倒是一查就查到了，主要是vs版本不兼容，我用的最新vs2022.17.2版本会有这个问题。最麻烦的是，无法降级，最后只有删除2022，安装了2019，问题解决。</li><li>重装完vs2019，发现UE5没法拉起vs了。。又是各种折腾，发现是之前vs2022单独安装了2019的buildtools，删除单独安装的buildtools后，拉起正常。  </li></ul><p>    目前正在编译UE5，预估10小时到2天时间，慢慢等了。。  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> unreal </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>预期有多重要</title>
       <link href="/2022/05/16/20220516-yu-qi-you-duo-chong-yao/"/>
       <url>/2022/05/16/20220516-yu-qi-you-duo-chong-yao/</url>
@@ -347,9 +372,9 @@
       
         <tags>
             
-            <tag> 技术 </tag>
-            
             <tag> 游戏 </tag>
+            
+            <tag> 技术 </tag>
             
         </tags>
       

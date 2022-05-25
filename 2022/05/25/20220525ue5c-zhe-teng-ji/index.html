@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="几个第三方客户端, 求生之路">
+    <meta name="keywords" content="UE5C++折腾记, 求生之路">
     <meta name="description" content="技术文章、人生感悟、业余吐槽">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>几个第三方客户端 | 求生之路</title>
+    <title>UE5C++折腾记 | 求生之路</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -250,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1006).jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (806).jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">几个第三方客户端</h1>
+                    <h1 class="description center-align post-title">UE5C++折腾记</h1>
                 </div>
             </div>
         </div>
@@ -277,12 +277,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                                <span class="chip bg-color">技术</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                                <span class="chip bg-color">生活</span>
+                            <a href="/tags/unreal/">
+                                <span class="chip bg-color">unreal</span>
                             </a>
                         
                     </div>
@@ -293,8 +289,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                生活
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
                             </a>
                         
                     </div>
@@ -306,7 +302,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-25
+                    2022-05-25
                 </div>
                 
 
@@ -315,7 +311,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    148
+                    317
                 </div>
                 
 
@@ -337,12 +333,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>    自从华为被google封了后，好多客户端就没法直接更新使用了，facebook，instagram，twitter，yutobe，几个必备都用得很难。通过第三方客户端可以一定程度解决问题  </p>
-<ol>
-<li>twitterAPP即便成功装上华为手机，打开也是闪退，必须使用第三方客户端，现在安装了twidereX，还在申请app中，比较麻烦，后面再说效果</li>
-<li>facebook和insta比较厚道，可以直接使用，但是最好安装<a target="_blank" rel="noopener" href="https://apkpure.com/">apkpure</a>进行更新管理</li>
-<li>youtobe直接使用<a target="_blank" rel="noopener" href="https://github.com/TeamNewPipe/NewPipe">newpipe</a>开源第三方客户端，即轻量又好用</li>
-</ol>
+                <p>    头脑发热在udemy买了UE5C++射击游戏开发课程，结果从第4课需要打包联机后，就开始了无限折腾之旅。  </p>
+<ul>
+<li>打包失败，报一个assertion错误，百度根本查不到，google一查就出来了，居然是ue5的bug，<a target="_blank" rel="noopener" href="https://forums.unrealengine.com/t/ue5-dedicated-server-error-assertion-failed-index-index-none/516571/38">解决方案</a><br>虽然里面提到了3种方式，但是实际测试下来，其实就一种可用，即修改引擎源码，并重新编译UE5<a target="_blank" rel="noopener" href="https://github.com/EpicGames/UnrealEngine/commit/2d750f27951d0a18c820c38f873fbf5e6a3587c7">bug</a>，已经有人提交了修复，但是5.0.2版本不知道什么时候才能正式发布，只有自己修改编译</li>
+<li>其余还有几种方式，只能避免打包运行报错，但是对后续的变更基本无法解决</li>
+<li>然后就是打包时报json文件的version不支持，这个倒是一查就查到了，主要是vs版本不兼容，我用的最新vs2022.17.2版本会有这个问题。最麻烦的是，无法降级，最后只有删除2022，安装了2019，问题解决。</li>
+<li>重装完vs2019，发现UE5没法拉起vs了。。又是各种折腾，发现是之前vs2022单独安装了2019的buildtools，删除单独安装的buildtools后，拉起正常。  </li>
+</ul>
+<p>    目前正在编译UE5，预估10小时到2天时间，慢慢等了。。  </p>
 
                 
             </div>
@@ -369,7 +367,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yarntech.cn/2021/11/25/20211125-ji-ge-di-san-fang-ke-hu-duan/">http://yarntech.cn/2021/11/25/20211125-ji-ge-di-san-fang-ke-hu-duan/</a>
+                    <a href="http://yarntech.cn/2022/05/25/20220525ue5c-zhe-teng-ji/">http://yarntech.cn/2022/05/25/20220525ue5c-zhe-teng-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -407,12 +405,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                                    <span class="chip bg-color">技术</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                                    <span class="chip bg-color">生活</span>
+                                <a href="/tags/unreal/">
+                                    <span class="chip bg-color">unreal</span>
                                 </a>
                             
                         </div>
@@ -858,75 +852,28 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/12/17/20211217-bai-jin-liao-liang-ge-you-xi/">
+                <a href="/2022/05/25/20220525ue5c-zhe-teng-ji/">
                     <div class="card-image">
                         
-                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1005).jpg" class="responsive-img" alt="白金了两个游戏">
+                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (806).jpg" class="responsive-img" alt="UE5C++折腾记">
                         
-                        <span class="card-title">白金了两个游戏</span>
+                        <span class="card-title">UE5C++折腾记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            刺客信条3解放
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-17
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    生活
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                        <span class="chip bg-color">游戏</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/11/20/20211120nacos-zai-k8s-li-shi-yong-dan-ji-mo-shi/">
-                    <div class="card-image">
-                        
-                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (1007).jpg" class="responsive-img" alt="nacos在k8s里使用单机模式">
-                        
-                        <span class="card-title">nacos在k8s里使用单机模式</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            nacosk8s
+                            unreal5UE5
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-25
                             </span>
                         <span class="publish-author">
                             
@@ -940,11 +887,60 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%8A%80%E6%9C%AF/">
-                        <span class="chip bg-color">技术</span>
+                    <a href="/tags/unreal/">
+                        <span class="chip bg-color">unreal</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/16/20220516-yu-qi-you-duo-chong-yao/">
+                    <div class="card-image">
+                        
+                        <img src="https://626c-blog-5gerwnzze000a4f1-1251300578.tcb.qcloud.la/bizhi/pic (805).jpg" class="responsive-img" alt="预期有多重要">
+                        
+                        <span class="card-title">预期有多重要</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            疫情经济管理
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%B7%A5%E4%BD%9C/" class="post-category">
+                                    工作
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%A1%E7%90%86/">
+                        <span class="chip bg-color">管理</span>
                     </a>
                     
                 </div>
