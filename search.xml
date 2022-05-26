@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>源码编译UE5的后遗症</title>
+      <link href="/2022/05/26/20220526-yuan-ma-bian-yi-ue5-de-hou-yi-zheng/"/>
+      <url>/2022/05/26/20220526-yuan-ma-bian-yi-ue5-de-hou-yi-zheng/</url>
+      
+        <content type="html"><![CDATA[<p>    折腾了两天，改了UE5源码，重新编译，重建项目，运行OK，但是打包总是错误，并且源码编译的UE5新建的工程又要重新编译引擎代码，耗时简直感人。<br>    依照网上的方法替换build目录下的文件改成预编译版本，结果导致打包都出问题，正要放弃的时候，发现UE5居然更新了5.0.2版本，看源码，那个地方还是没有改过来，但是实测C++工程打包执行正常了，应该是修改了别的地方。<br>    总结：太难了！  UE5的C++工程感觉问题也是挺多的，特别是环境问题，遇到了很难解决。  </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> unreal </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>UE5C++折腾记</title>
       <link href="/2022/05/25/20220525ue5c-zhe-teng-ji/"/>
       <url>/2022/05/25/20220525ue5c-zhe-teng-ji/</url>
@@ -372,9 +397,9 @@
       
         <tags>
             
-            <tag> 游戏 </tag>
-            
             <tag> 技术 </tag>
+            
+            <tag> 游戏 </tag>
             
         </tags>
       
